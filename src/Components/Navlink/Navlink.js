@@ -15,12 +15,12 @@ const Navlink = props => {
 
             <Link to={props.to} test-handle={props.test_handle}>
 
-                <span className={classes.navlink}>{props.text}</span>
-
                 <div className={classes.iconWrapper}>
                     <img className={classes.icon} src={props.img} alt="A Navigation icon"/>
                 </div>
 
+                <span className={classes.link_text}>{props.text}</span>
+                
             </Link>
 
         </div>
