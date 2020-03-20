@@ -26,10 +26,37 @@ const Header = props => {
 
         <nav className={classes.nav}>
 
-            <Navlink to="/" test-handle="home-link" text="HOME" img={active_icon === "/" ? home_selected:home} handleClick={()=> set_active_icon("/")} />
-            <Navlink to="/projects" test-handle="projects-link" text="PROJECTS" img={active_icon === "/projects" ? projects_selected:projects} handleClick={()=> set_active_icon("/projects")}/>
-            <Navlink to="/technologies" test-handle="technology-link" text="TECHNOLOGIES" img={active_icon === "/technologies" ? technologies_selected:technologies} handleClick={()=> set_active_icon("/technologies")}  />
-            <Navlink to="/education" test-handle="education-link" text="EDUCATION" img={active_icon === "/education" ? education_selected:education} handleClick={()=> set_active_icon("/education")} />
+            <Navlink 
+            to="/" 
+            test-handle="home-link" 
+            text="HOME" 
+            img={active_icon === "/" ? home_selected:home} 
+            handleClick={()=> set_active_icon("/")} 
+            />
+
+            <Navlink 
+            to="/projects" 
+            test-handle="projects-link" 
+            text="PROJECTS" 
+            img={active_icon === "/projects" ? projects_selected:projects} 
+            handleClick={()=> set_active_icon("/projects")}
+            />
+
+            <Navlink 
+            to="/technologies" 
+            test-handle="technology-link" 
+            text="TECHNOLOGIES" 
+            img={active_icon === "/technologies" ? technologies_selected:technologies} 
+            handleClick={()=> set_active_icon("/technologies")}  
+            />
+
+            <Navlink 
+            to="/education" 
+            test-handle="education-link" 
+            text="EDUCATION" 
+            img={active_icon === "/education" ? education_selected:education} 
+            handleClick={()=> set_active_icon("/education")} 
+            />
 
         </nav>
 

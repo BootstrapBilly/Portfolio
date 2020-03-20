@@ -1,9 +1,55 @@
-.link_text{
+.link_text {
     display: none;
 }
 
-.iconWrapper, .icon{
-    width:10vw;
-    height:10vh
-    
+.iconWrapper, .icon {
+    width: 10vw;
+    height: 10vh;
+}
+
+@media (orientation: landscape) and (max-height:481px) {
+    .iconWrapper, .icon {
+        width: 11vh;
+        height: 11vh
+    }
+}
+
+/*ipad portrait*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .iconWrapper, .icon {
+        width: 6.5vh;
+        height: 6.5vh
+    }
+}
+
+/*ipad landscape*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .iconWrapper, .icon {
+        width: 8vh;
+        height: 8vh
+    }
+}
+
+/*laptop*/
+
+@media only screen and (min-width: 1224px) and (min-device-height: 500px) {
+    .iconWrapper, .icon {
+        display: none;
+    }
+    .link_text {
+        display: block;
+        margin-left: 2vw;
+        color: #6093ca;
+    }
+    .link_text:hover {
+        color: #007bff;
+    }
+}
+
+@media only screen and (min-width: 1900px) and (min-device-height: 500px) {
+    .link_text {
+        font-size: 1.4rem;
+    }
 }

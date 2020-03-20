@@ -9,11 +9,12 @@ import classes from "./Navlink.module.css"
 
 const Navlink = props => {
 
+
     return (
 
         <div className={classes.container} onClick={props.handleClick}>
 
-            <Link to={props.to} test-handle={props.test_handle}>
+            <Link to={props.to} test-handle={props.test_handle} style={{ textDecoration: 'none' }}>
 
                 <div className={classes.iconWrapper}>
                     <img className={classes.icon} src={props.img} alt="A Navigation icon"/>
