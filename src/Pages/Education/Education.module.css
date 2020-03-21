@@ -1,5 +1,29 @@
 .container {
 
     height: 100%;
+    padding: 0 4vw
     
+}
+
+.title{
+
+    color: rgb(13, 102, 236);
+}
+
+.header{
+
+    font-size: 1.3rem;
+}
+
+.sub_header{
+
+    font-size: 1.1rem;
+}
+
+.description{
+    font-size: 0.95rem;
+}
+
+.college{
+    margin-top: 5vh;
 }
