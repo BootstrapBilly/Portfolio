@@ -1,26 +1,34 @@
 .container {
 
-    height: 100%;
-    padding: 0 4vw
+    padding: 0 4vw;
+    overflow-y: scroll;
+    padding-bottom: 10vh;
     
 }
 
 .title{
 
-    color: rgb(13, 102, 236);
+    color: #1273EB;
 }
 
 .header{
 
     font-size: 1.3rem;
+    color: #1273EB;
 }
 
 .sub_header{
 
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .description{
+
+    font-size: 0.95rem;
+}
+
+.description_point{
+    margin: 0;
     font-size: 0.95rem;
 }
 

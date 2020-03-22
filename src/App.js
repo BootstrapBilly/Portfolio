@@ -18,10 +18,10 @@ const App = () => {
 
       <Switch>
 
-        <Route path="/" exact component={Home} />
         <Route path="/projects" exact component={Projects} />
         <Route path="/technologies" exact component={Technologies} />
         <Route path="/education" exact component={Education} />
+        <Route path="/" component={Home} />
 
       </Switch>
 
