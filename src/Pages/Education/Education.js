@@ -32,7 +32,7 @@ const Home = props => {
                     <p className={classes.description_point}>- Mobile computing </p>
                     <p className={classes.description_point}>- Data management and Applications </p>
 
-                    <p className={classes.description}><b>Currently on track for a first class honours, expected graduation is 2021.</b></p>
+                    <p className={classes.description}><b>Currently on track for a first class honours, expected graduation is in 2021.</b></p>
                     <p className={classes.description}>- Current weighted average is 69.5%</p>
 
                 </div>

@@ -60,7 +60,7 @@
 }
 
 /*laptop*/
-@media only screen  and (min-width : 1224px) and (min-device-height : 500px)  {
+@media only screen  and (min-width : 1224px) and (min-device-height : 500px) and (orientation : portrait) {
 
     .nav{
         bottom: unset;
