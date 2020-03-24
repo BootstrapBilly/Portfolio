@@ -37,7 +37,7 @@ const Header = props => {
             <Navlink
                 to="/technologies"
                 test-handle="technology-link"
-                text="TECHNOLOGIES"
+                text="TECH STACK"
                 img={active_icon === "/technologies" ? technologies_selected : technologies}
                 handleClick={() => set_active_icon("/technologies")}
             />
