@@ -18,9 +18,10 @@ const Navlink = props => {
 
                 <div className={classes.iconWrapper}>
                     <img className={classes.icon} src={props.img} alt="A Navigation icon"/>
+                    <span className={classes.link_text}>{props.text}</span>
                 </div>
 
-                <span className={classes.link_text}>{props.text}</span>
+                
                 
             </Link>
 

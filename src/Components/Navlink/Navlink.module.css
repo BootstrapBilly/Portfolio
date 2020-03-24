@@ -1,26 +1,53 @@
 .link_text {
-    display: none;
+    display: block;
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: black;
+    margin-top:-0.7vh;
+    white-space: nowrap
+
 }
 
-.iconWrapper, .icon {
+.iconWrapper{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+ .icon {
     width: 10vw;
     height: 10vh;
 }
 
 @media (orientation: landscape) and (max-height:481px) {
-    .iconWrapper, .icon {
-        width: 11vh;
-        height: 11vh
+
+    .iconWrapper {
+        height: 20vh;
     }
+
+    .icon {
+        height: 10vh;
+    }
+    .link_text {
+        margin-top:2vh;
+    }
+
 }
 
 /*ipad portrait*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
     .iconWrapper, .icon {
         width: 6.5vh;
         height: 6.5vh
     }
+    .link_text {
+        margin-top:1vh;
+        font-size: 0.7rem;
+    }
+
 }
 
 /*ipad landscape*/
@@ -30,26 +57,39 @@
         width: 8vh;
         height: 8vh
     }
+    .link_text {
+        margin-top:1vh;
+        font-size: 0.7rem;
+    }
 }
 
-/*laptop*/
+/*ipad PRo 12.9" portrait*/
 
-@media only screen and (min-width: 1224px) and (min-device-height: 500px) and (orientation : portrait){
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .link_text {
+        font-size: 1rem;
+    }
+}
+
+
+/*small laptop and landscape ipad pro*/
+@media only screen and (min-width: 1024px) and (min-height: 768px){
+
     .iconWrapper, .icon {
-        display: none;
+        width: 6vh;
+        height: 6vh
     }
+
     .link_text {
-        display: block;
-        margin-left: 2vw;
-        color: #6093ca;
+        font-size: 1.23vh;
+        margin-top: 1vh;
     }
-    .link_text:hover {
-        color: #007bff;
-    }
+
 }
 
-@media only screen and (min-width: 1900px) and (min-device-height: 500px) {
-    .link_text {
-        font-size: 1.4rem;
-    }
+@media only screen and (min-width: 1900px) and (min-device-height: 800px) {
+
 }
+
+

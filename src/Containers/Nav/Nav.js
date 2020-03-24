@@ -53,7 +53,7 @@ const Header = props => {
             <Navlink
                 to="/personal"
                 test-handle="personal-link"
-                text="PERSONAL"
+                text="ABOUT ME"
                 img={active_icon === "/personal" ? personal_selected : personal}
                 handleClick={() => set_active_icon("/")}
             />
