@@ -20,11 +20,8 @@
     height: 10vh;
 }
 
-@media (orientation: landscape) and (max-height:481px) {
+@media (orientation: landscape) {
 
-    .iconWrapper {
-        height: 20vh;
-    }
 
     .icon {
         height: 10vh;
@@ -52,7 +49,7 @@
 
 /*ipad landscape*/
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-height : 1024px) and (max-device-height : 1024px) and (orientation : landscape){
     .icon {
         width: 8vh;
         height: 8vh
@@ -78,22 +75,6 @@
     }
 
   }
-
-    /* Galaxy tab 10 landscape */
-    @media (min-device-width: 800px) 
-    and (max-device-width: 1280px) 
-    and (orientation: landscape){
-  
-        .icon {
-            width: 6vh;
-            height: 6vh
-        }
-        .link_text {
-            font-size: 0.8rem;
-            margin-top: 1vh;
-        }
-  
-    }
 
 /*ipad PRo 12.9" portrait*/
 

@@ -1,190 +1,214 @@
 .container {
-
     padding: 0 4vw;
     overflow-y: scroll;
     padding-bottom: 10vh;
-    
+    margin-left: 3vw;
 }
 
-.title{
-
+.title {
     color: #1273EB;
+    margin-top: 2rem;
+    margin-left:7%;
+    margin-bottom: 0
 }
 
-.header{
-
-    font-size: 1.3rem;
+.subject {
+    font-size: 1.2rem;
     color: #1273EB;
+    margin-bottom: 0;
 }
 
-.sub_header{
+.school_name {
+    font-size: 1.1rem;
+}
 
+.description {
     font-size: 1rem;
 }
 
-.description{
-
-    font-size: 0.95rem;
-}
-
-.description_point{
+.description_point {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    color: rgb(80, 79, 79);
+    margin-left: 1vw
 }
 
-.college{
-    margin-top: 5vh;
+.college {
+    margin-top: 2vh;
 }
 
-@media (orientation: landscape) and (max-height:481px) {
+.degree_description {
+    display: none;
+}
+
+.description_grade {
+    font-size: 0.8rem;
+}
+
+/* long portrait phone*/
+
+@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
+    .title {
+        margin-top: 3rem;
+    }
+    .subject {
+        font-size: 1.25rem;
+    }
+    .school_name {
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 1.1rem;
+    }
+    .description_point {
+        margin: 0;
+        font-size: 1rem;
+        color: rgb(80, 79, 79);
+        margin-left: 1vw
+    }
+    .college {
+        margin-top: 2vh;
+    }
+    .degree_description {
+        display: none;
+    }
+    .description_grade {
+        font-size: 0.95rem;
+    }
+}
+
+/* landscape phone*/
+@media (orientation: landscape) {
+
+    .title {
+        font-size: 1.4rem;
+        margin-left: 48%;
+        margin-bottom: 4px;
+        margin-top: 4px;
+    }
 
     .container {
+        margin-left: 14%;
+        display:flex
+    }
 
-        padding-bottom: 20vh;
-        
+    .subject {
+        font-size: 0.95rem;
+    }
+    .school_name {
+        font-size: 0.9rem;
+    }
+    .description {
+        font-size: 0.8rem;
+    }
+    .description_point {
+        font-size: 0.75rem;
+    }
+    .description_grade {
+        font-size: 0.7rem;
+    }
+    .college{
+        margin-top: 0;
+        margin-left: 3vw;
     }
 
 }
 
-@media (orientation: landscape) and (max-height:481px) {
+/* long landscape phone*/
+@media only screen and (min-device-width: 700px) and (max-device-height: 500px) and (orientation: landscape) {
 
+    .title {
+        font-size: 1.4rem;
+        margin-left: 48%;
+        margin-bottom: 0;
+        margin-top: 8px;
+    }
 
+    .container {
+        margin-left: 14%;
+        display:flex;
+    }
 
+    .subject {
+        font-size: 0.95rem;
+    }
+    .school_name {
+        font-size: 0.9rem;
+    }
+    .description {
+        font-size: 0.9rem;
+    }
+    .description_point {
+        font-size: 0.85rem;
+    }
+    .description_grade {
+        font-size: 0.8rem;
+    }
+    .college{
+        margin-top: 0;
+        margin-left: 5vw;
+    }
+ 
 }
 
 /*ipad portrait*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
-
-    .header{
-    
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .subject {
         font-size: 1.6rem;
     }
-    
-    .sub_header{
-    
+    .school_name {
         font-size: 1.3rem;
     }
-    
-    .description{
-    
+    .description {
         font-size: 1.25rem;
     }
-    
-    .description_point{
+    .description_point {
         font-size: 1.25rem;
     }
-    
-    .college{
+    .college {
         margin-top: 5vh;
     }
-
 }
 
 /*ipad landscape*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
 
-    .header{
-    
+@media only screen and (min-device-height : 1024px) and (max-device-height : 1024px) and (orientation : landscape){
+    .subject {
         font-size: 1.5rem;
     }
-    
-    .sub_header{
-    
+    .school_name {
         font-size: 1.2rem;
     }
-    
-    .description{
-    
+    .description {
         font-size: 1rem;
     }
-    
-    .description_point{
+    .description_point {
         font-size: 1rem;
     }
-    
-    .college{
+    .college {
         margin-top: 5vh;
     }
-
 }
 
 /*iPad pro*/
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
 
-    .title{
-
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .title {
         font-size: 3.1rem;
     }
-    .header{
-    
+    .subject {
         font-size: 2.2rem;
     }
-    
-    .sub_header{
-    
+    .school_name {
         font-size: 1.9rem;
     }
-    
-    .description{
-    
+    .description {
         font-size: 1.85rem;
     }
-    
-    .description_point{
+    .description_point {
         font-size: 1.85rem;
     }
-    
-    .college{
+    .college {
         margin-top: 5vh;
     }
-
-  }
-
-
-/*laptop*/
-@media only screen  and (min-width : 1224px) and (min-device-height : 500px){
-
-
-}
-
-
-/*ipad portrait*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
-
-
-
-}
-
-/*ipad landscape*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
-
-
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-
-}
-
-/*laptop*/
-@media only screen  and (min-width : 1224px) and (min-device-height : 500px)  {
-
-
-
 }

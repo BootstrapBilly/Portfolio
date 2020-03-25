@@ -24,41 +24,41 @@ const Header = props => {
 
     return (
 
-        <nav className={classes.nav}>
+            <nav className={classes.nav}>
 
-            <Navlink
-                to="/projects"
-                test-handle="projects-link"
-                text="PROJECTS"
-                img={active_icon === "/projects" ? projects_selected : projects}
-                handleClick={() => set_active_icon("/projects")}
-            />
+                <Navlink
+                    to="/projects"
+                    test-handle="projects-link"
+                    text="PROJECTS"
+                    img={active_icon === "/projects" ? projects_selected : projects}
+                    handleClick={() => set_active_icon("/projects")}
+                />
 
-            <Navlink
-                to="/technologies"
-                test-handle="technology-link"
-                text="TECH STACK"
-                img={active_icon === "/technologies" ? technologies_selected : technologies}
-                handleClick={() => set_active_icon("/technologies")}
-            />
+                <Navlink
+                    to="/technologies"
+                    test-handle="technology-link"
+                    text="TECH STACK"
+                    img={active_icon === "/technologies" ? technologies_selected : technologies}
+                    handleClick={() => set_active_icon("/technologies")}
+                />
 
-            <Navlink
-                to="/education"
-                test-handle="education-link"
-                text="EDUCATION"
-                img={active_icon === "/education" ? education_selected : education}
-                handleClick={() => set_active_icon("/education")}
-            />
+                <Navlink
+                    to="/education"
+                    test-handle="education-link"
+                    text="EDUCATION"
+                    img={active_icon === "/education" ? education_selected : education}
+                    handleClick={() => set_active_icon("/education")}
+                />
 
-            <Navlink
-                to="/personal"
-                test-handle="personal-link"
-                text="ABOUT ME"
-                img={active_icon === "/personal" ? personal_selected : personal}
-                handleClick={() => set_active_icon("/")}
-            />
+                <Navlink
+                    to="/about-me"
+                    test-handle="personal-link"
+                    text="ABOUT ME"
+                    img={active_icon === "/about-me" ? personal_selected : personal}
+                    handleClick={() => set_active_icon("/")}
+                />
 
-        </nav>
+            </nav>
 
     )
 
