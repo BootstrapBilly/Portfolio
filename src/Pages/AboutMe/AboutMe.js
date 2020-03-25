@@ -2,23 +2,23 @@
 import React from "react"
 
 //css
-import classes from "./Home.module.css"
+import classes from "./AboutMe.module.css"
 
 //components
 import Nav from "../../Containers/Nav/Nav"
 
-const Home = props => {
+const AboutMe = props => {
 
     return (
 
         <div className={classes.container}>   
 
             <Nav path={props.location.pathname}/>
-            
+            Meh
         </div>
 
     )
 
 }
 
-export default Home
+export default AboutMe

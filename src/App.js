@@ -5,10 +5,10 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 
 //Components
-import Home from "./Pages/Home/Home"
 import Projects from "./Pages/Projects/Projects"
 import Technologies from "./Pages/Technologies/Technologies"
 import Education from "./Pages/Education/Education"
+import AboutMe from "./Pages/AboutMe/AboutMe"
 
 const App = () => {
 
@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/projects" exact component={Projects} />
         <Route path="/technologies" exact component={Technologies} />
         <Route path="/education" exact component={Education} />
-        <Route path="/" component={Home} />
+        <Route path="/about-me" exact component={AboutMe} />
 
       </Switch>
 
