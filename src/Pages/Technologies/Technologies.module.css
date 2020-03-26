@@ -4,7 +4,107 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    overflow-y: scroll;
-    margin-bottom: 15vh;
+    overflow-y: visible;
+    margin-bottom: 10vh;
+
+}
+
+/* long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
     
+
+
+}
+
+/* landscape phone*/
+@media (orientation: landscape) {
+
+    .container{
+        margin-left: 7%;
+        margin-right: 6%;
+        justify-content: space-evenly;
+        overflow-y: visible;
+        padding-bottom: 5vh;
+    }
+
+}
+
+
+/* long landscape phone*/
+@media only screen and (min-device-width: 600px) and (max-device-height: 500px) and (orientation: landscape) {
+
+
+}
+
+/*small tablet portrait*/
+@media (min-device-height: 800px) and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .container{
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 2%;
+    }
+
+}
+    
+/*small tablet landscape*/
+@media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+
+}
+
+/*! maybe useless - ipad portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .container{
+        margin-top: 1vh;
+    }
+
+}
+
+/*ipad landscape*/
+@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+    
+}
+
+/*Other tablet portrait*/
+@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
+   
+  
+}
+
+/*Other tablet landscape*/
+@media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+
+
+}
+
+/*iPad pro portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+
+}
+
+/*iPad pro landscape*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+ 
+}
+
+/*small laptop */
+@media only screen and (min-width: 1200px) and (min-height: 768px) {
+
+    .container{
+        margin-top: 4vh;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
+
+/*super-massive */
+@media only screen and (min-width: 1600px) and (min-height: 768px) {
+
+  
+
 }

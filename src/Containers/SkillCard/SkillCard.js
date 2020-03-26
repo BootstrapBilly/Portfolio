@@ -24,12 +24,6 @@ const SkillCard = props => {
 
             </div>
 
-            <div className={classes.button_container}>
-
-                <div className={classes.button} style={{backgroundColor:props.color}}>More info</div>
-
-            </div>
-
         </div>
 
     )

@@ -38,7 +38,7 @@ const Home = props => {
                 <SkillCard title={"MongoDb"} color="#13AA52" icon_name={database}/>
                 <SkillCard title={"CSS/Flexbox"} color="#006BC0" icon_name={css}/>
                 <SkillCard title={"Git/Github"} color="#323232" icon_name={github}/>
-                <SkillCard title={"Project Planning"} color="#A0C5E8" icon_name={project_planning}/>
+                <SkillCard title={"Project Planning"} color="#69b8db" icon_name={project_planning}/>
                 <SkillCard title={"Agile & Scrum"} color="#fb654e" icon_name={agileandscrum}/>
 
             </div>
