@@ -56,24 +56,19 @@
 
 }
 
-/* Galaxy tab 10 portrait */
 
-@media (min-device-width: 800px) 
-  and (max-device-width: 1280px) 
-  and (orientation: portrait){
+/*Other tablet portrait*/
 
+@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
     .nav {
         width: 12vw;
-        height: 45%;
+        height: 50%;
         flex-direction: column;
-        top:5%;
+        top:7%;
         border-radius: 10px;
         left:2%
     }
-
-  }
-
-
+}
 
 
 /*ipad PRo 12.9" portrait*/
@@ -98,9 +93,9 @@
         width: 5.5%;
         height: 50%;
         flex-direction: column;
-        top:7%;
+        top:13%;
         border-radius: 10px;
-        left:1%;
+        left:5%;
     }
 
 }
