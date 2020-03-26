@@ -17,7 +17,7 @@ import education_selected from "../../Assets/Icons/education-selected.svg"
 import personal from "../../Assets/Icons/personal.svg"
 import personal_selected from "../../Assets/Icons/personal-selected.svg"
 
-const Header = props => {
+const Nav = props => {
 
     //?states
     const [active_icon, set_active_icon] = useState(props.path)
@@ -37,7 +37,7 @@ const Header = props => {
                 <Navlink
                     to="/technologies"
                     test-handle="technology-link"
-                    text="TECH STACK"
+                    text="SKILLS"
                     img={active_icon === "/technologies" ? technologies_selected : technologies}
                     handleClick={() => set_active_icon("/technologies")}
                 />
@@ -64,4 +64,4 @@ const Header = props => {
 
 }
 
-export default Header
+export default Nav

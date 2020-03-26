@@ -1,18 +1,42 @@
-.container {
+.container{
+    width:40%;
+    height: 15vh;
+    border: 0.5px solid rgba(0, 0, 0, 0.336);
+    margin: 2.5% 0;
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px 3px rgba(49, 49, 49, 0.1);
+}
+
+.title_container{
 
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    overflow-y: visible;
-    margin-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
 
 }
+.title{
+
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.icon{
+    height: 7vh;
+}
+
 
 /* long portrait phone*/
 @media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
     
-
 
 }
 
@@ -20,11 +44,12 @@
 @media (orientation: landscape) {
 
     .container{
-        margin-left: 7%;
-        margin-right: 6%;
-        justify-content: space-evenly;
-        overflow-y: visible;
-        padding-bottom: 5vh;
+        width: 25%;
+        height: 20%;
+    }
+
+    .icon{
+        height: 10vh;
     }
 
 }
@@ -40,13 +65,16 @@
 @media (min-device-height: 800px) and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
 
     .container{
-        margin-left: 6%;
-        margin-right: 6%;
-        margin-top: 2%;
+        width: 35%;
+        height: 20%;
+    }
+
+    .icon{
+        height: 5vh;
     }
 
 }
-    
+
 /*small tablet landscape*/
 @media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
 
@@ -56,9 +84,6 @@
 /*! maybe useless - ipad portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 
-    .container{
-        margin-top: 1vh;
-    }
 
 }
 
@@ -83,21 +108,34 @@
 /*iPad pro portrait*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
+    .title{
+        font-size: 1.6rem;
+    }
 
 }
 
 /*iPad pro landscape*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
  
+    .title{
+        font-size: 1.5rem;
+    }
 }
 
 /*small laptop */
 @media only screen and (min-width: 1200px) and (min-height: 768px) {
 
     .container{
-        margin-top: 4vh;
-        width: 80%;
-        margin-left: 10%;
+        width:25%;
+        height: 20%;
+    }
+
+    .icon{
+        height: 6vh;
+    }
+
+    .title{
+        font-size: 1.2rem;
     }
 
 }
