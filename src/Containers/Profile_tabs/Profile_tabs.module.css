@@ -1,7 +1,22 @@
-.container {
+.tab_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 7vh;
+}
 
-    height: 100%;
-    
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin:-2% 14%;
+    padding-top:7%;
+
+}
+
+.active_tab {
+    border-bottom: 2px solid #04999A;
 }
 
 /* long portrait phone*/
@@ -14,10 +29,12 @@
 /* landscape phone*/
 @media (orientation: landscape) {
 
-    .container{
-        margin-left: 15%;
+    .tab_container{
+        margin-top: 1vh;}
+    .tab{
+        margin: 0% 18.5%;
+        padding: 0;
     }
-
 
 }
 
@@ -31,15 +48,16 @@
 /*small tablet portrait*/
 @media (min-device-height: 800px) and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
 
+    .tab_container{
+        margin-left: 7%;
+    }
 
 }
     
 /*small tablet landscape*/
 @media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
 
-.container{
-    margin-right: 15%;
-}
+
 }
 
 /*! maybe useless - ipad portrait*/
@@ -54,8 +72,9 @@
 /*ipad landscape*/
 @media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
 
-    .container{
-        margin:0;
+    .tabs_container{
+        margin-left:20%;
+        background-color: red;
     }
 
 }

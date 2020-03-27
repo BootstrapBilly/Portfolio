@@ -1,7 +1,66 @@
 .container {
+    display: flex;
+    flex-direction: column;
+    height: 37.5%;
+    background-image: url("../../Assets/Img/profile-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    height: 100%;
-    
+}
+
+.overlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 42.5%;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+
+}
+
+.photo_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    height: 10vh;
+}
+
+.photo {
+
+    height: 30vh;
+    width: 30vh;
+    object-fit: none;
+    border-radius: 200px;
+    object-position: 47% 5%;
+    transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    border: 5px solid white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.555);
+}
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+    width: 100%;
+}
+
+.caption_text{
+    font-weight: 900;
+    color: black;
+    z-index: 999;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    background-color: white;
+    width: fit-content;
+    padding: 2px 4px;
+    border-radius: 10px;
 }
 
 /* long portrait phone*/
@@ -15,9 +74,16 @@
 @media (orientation: landscape) {
 
     .container{
-        margin-left: 15%;
+        height: 43%;
     }
-
+    .photo{
+        height: 50vh;
+        width: 50vh;
+        margin-top: 5vh;
+    }
+    .caption{
+        margin-top: 12vh;
+    }
 
 }
 
@@ -37,9 +103,7 @@
 /*small tablet landscape*/
 @media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
 
-.container{
-    margin-right: 15%;
-}
+
 }
 
 /*! maybe useless - ipad portrait*/
@@ -54,10 +118,7 @@
 /*ipad landscape*/
 @media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
 
-    .container{
-        margin:0;
-    }
-
+    
 }
 
 /*Other tablet portrait*/
