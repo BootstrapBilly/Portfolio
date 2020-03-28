@@ -83,12 +83,26 @@
 /*iPad pro portrait*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
+.getintouch{
+    font-size: 1.7rem;
+}
+
+.email{
+    font-size: 2em;
+}
 
 }
 
 /*iPad pro landscape*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
  
+    .getintouch{
+        font-size: 1.7rem;
+    }
+    
+    .email{
+        font-size: 2em;
+    }
 }
 
 /*small laptop */

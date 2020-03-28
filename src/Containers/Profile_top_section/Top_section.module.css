@@ -136,17 +136,39 @@
 /*iPad pro portrait*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
+    .caption{
+        font-size: 2rem;
+    }
 
 }
 
 /*iPad pro landscape*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
  
+    .photo{
+        height: 30vh;
+        width: 30vh;
+    }
+
+    .caption{
+        font-size: 2rem;
+        margin-top: 7vh;
+    }
 }
 
 /*small laptop */
 @media only screen and (min-width: 1200px) and (min-height: 768px) {
 
+    .photo{
+        height: 25vh;
+        width: 25vh;
+        margin-top: 10%;
+    }
+
+    .caption{
+        font-size: 1.2rem;
+        margin-top: 7.5%;
+    }
 
 }
 

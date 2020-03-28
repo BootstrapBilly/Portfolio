@@ -9,7 +9,7 @@ const Profile_contact = props => {
     return (
 
             <div className={classes.container}>
-                <p>Get in touch</p>
+                <p className={classes.getintouch}>Get in touch</p>
                 <span className={classes.email}>Billyjcatchpole@gmail.com</span>
             </div>
 

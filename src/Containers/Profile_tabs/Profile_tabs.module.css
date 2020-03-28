@@ -94,17 +94,26 @@
 /*iPad pro portrait*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
-
+.tab{
+    font-size: 1.5rem;
+}
 }
 
 /*iPad pro landscape*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
  
+    .tab{
+        font-size: 1.5rem;
+    }
 }
 
 /*small laptop */
 @media only screen and (min-width: 1200px) and (min-height: 768px) {
 
+    .tab_container{
+        margin: 0 35%;
+    }
+    .tab{margin: 0 12%;}
 
 }
 

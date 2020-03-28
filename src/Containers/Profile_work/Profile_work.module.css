@@ -71,12 +71,14 @@
 /*iPad pro portrait*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
+    .text{font-size: 2rem;}
 
 }
 
 /*iPad pro landscape*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
  
+    .text{font-size: 2rem;}
 }
 
 /*small laptop */
@@ -88,6 +90,7 @@
 /*super-massive */
 @media only screen and (min-width: 1600px) and (min-height: 768px) {
 
+    .text{font-size: 1.3rem;}
   
 
 }

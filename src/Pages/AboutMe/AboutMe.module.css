@@ -40,6 +40,7 @@
 .container{
     margin-right: 15%;
 }
+
 }
 
 /*! maybe useless - ipad portrait*/
@@ -75,17 +76,25 @@
 /*iPad pro portrait*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
+    
 
 }
 
 /*iPad pro landscape*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
  
+    .container{
+        margin: 0;
+    }
+
 }
 
 /*small laptop */
 @media only screen and (min-width: 1200px) and (min-height: 768px) {
 
+    .container{
+        margin: 0;
+    }
 
 }
 

@@ -7,6 +7,8 @@ import classes from "./Top_section.module.css"
 //assets
 import photo from "../../Assets/Img/me.png"
 
+import Img from 'react-image'
+
 const Top_section = props => {
 
     return (
@@ -19,7 +21,7 @@ const Top_section = props => {
 
                 <div className={classes.photo_container}>
 
-                    <img src={photo} alt="A portrait of me" className={classes.photo} />
+                    <Img src={photo} alt="A portrait of me" className={classes.photo} />
                 </div>
 
                 <div className={classes.caption}>
