@@ -12,7 +12,9 @@ const Navlink = props => {
 
     return (
 
-        <div className={classes.container} onClick={props.handleClick}>
+        <div className={classes.container} onClick={props.handleClick}             
+        onMouseEnter={props.handleMouseEnter}
+        onMouseLeave={props.handleMouseLeave}>
 
             <Link to={props.to} test-handle={props.test_handle} style={{ textDecoration: 'none' }}>
 

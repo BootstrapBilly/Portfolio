@@ -24,7 +24,7 @@ const Nav = props => {
 
     return (
 
-            <nav className={classes.nav}>
+            <nav className={classes.nav} onMouseLeave={()=> set_active_icon(props.path)}>
 
                 <Navlink
                     to="/projects"
@@ -32,6 +32,7 @@ const Nav = props => {
                     text="PROJECTS"
                     img={active_icon === "/projects" ? projects_selected : projects}
                     handleClick={() => set_active_icon("/projects")}
+                    handleMouseEnter={()=> set_active_icon("/projects")}
                 />
 
                 <Navlink
@@ -40,6 +41,7 @@ const Nav = props => {
                     text="SKILLS"
                     img={active_icon === "/technologies" ? technologies_selected : technologies}
                     handleClick={() => set_active_icon("/technologies")}
+                    handleMouseEnter={()=> set_active_icon("/technologies")}
                 />
 
                 <Navlink
@@ -48,6 +50,7 @@ const Nav = props => {
                     text="EDUCATION"
                     img={active_icon === "/education" ? education_selected : education}
                     handleClick={() => set_active_icon("/education")}
+                    handleMouseEnter={()=> set_active_icon("/education")}
                 />
 
                 <Navlink
@@ -55,7 +58,8 @@ const Nav = props => {
                     test-handle="personal-link"
                     text="ABOUT ME"
                     img={active_icon === "/about-me" ? personal_selected : personal}
-                    handleClick={() => set_active_icon("/")}
+                    handleClick={() => set_active_icon("/about-me")}
+                    handleMouseEnter={()=> set_active_icon("/about-me")}
                 />
 
             </nav>
