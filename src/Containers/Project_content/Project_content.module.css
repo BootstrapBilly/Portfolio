@@ -1,0 +1,12 @@
+.container {
+    height: 65%;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.notes{
+    margin: 2% 5%;
+}
