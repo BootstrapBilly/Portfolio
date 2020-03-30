@@ -5,8 +5,8 @@ import React from "react"
 import classes from "./Bottom_section.module.css"
 
 //components
-import ProfileWork from "../../Containers/Profile_work/Profile_work"
-import ProfileContact from "../../Containers/Profile_contact/Profile_contact"
+import ProfileWork from "../../Components/Profile_work/Profile_work"
+import ProfileContact from "../../Components/Profile_contact/Profile_contact"
 
 const Bottom_section = props => {
 

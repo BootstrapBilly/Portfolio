@@ -1,8 +1,7 @@
 .container {
-    height: 55vh;
+    height: 70vh;
     width: 85%;
     margin-top: 5%;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -13,4 +12,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
 }

@@ -8,10 +8,6 @@ import classes from "./Projects.module.css"
 import Nav from "../../Containers/Nav/Nav"
 import Project from "../../Containers/Project/Project"
 
-//assets
-import diary_photo from "../../Assets/Img/diary-screenshot.jpg"
-import window_cleaning_photo from "../../Assets/Img/window_cleaning.jpg"
-
 const Projects = props => {
 
     return (
@@ -20,17 +16,38 @@ const Projects = props => {
 
             <Nav path={props.location.pathname} />
 
-            <Project image_source={diary_photo}
-                title="Appointment Manager"
-                notes="Notes"
-                handleClickGithub={() => window.open("https://github.com/BootstrapBilly/1to1", "_blank")} />
-            <Project image_source={window_cleaning_photo}
-                title="Window Cleaning Planner"
-                notes="Notes"
-                handleClickGithub={() => window.open("https://github.com/BootstrapBilly/1to1", "_blank")} />
-            
-            <Project />
-            <Project />
+            <Project
+
+                rgb="4, 154, 154"
+
+                title="Schedule Manager"
+                project_type={<p>Fullstack Web Application</p>}
+
+                thumbnail_name={"diary-screenshot"}
+                thumbnail_desc={"A view of the grid"}
+
+                images={[
+
+                    { name: "diary-add-appointment", desc: "Adding an appointment" },
+                    { name: "diary_grid_showcase", desc: "Other grid functions" },
+                    { name: "diary_validation", desc: "Form validation" },
+                    { name: "diary_move_appointment", desc: "Moving an appointment" }
+
+                ]}
+
+                handleClickGithub={() => window.open("https://github.com/BootstrapBilly/1to1", "_blank")}
+                handleClickLive={() => window.open("https://to1-13f69.firebaseapp.com/", "_blank")}
+
+                mobile_description={
+
+                <p>A schedule manager for my sisters consultancy business, featuring a custom grid data struture. <p> Clients can be added, deleted and updated. Appointments can be added, deleted and moved.
+                </p></p>
+
+                }
+
+                tech_used="React, Node, Express, MongoDb, Mongoose"
+            />
+
 
         </div>
 

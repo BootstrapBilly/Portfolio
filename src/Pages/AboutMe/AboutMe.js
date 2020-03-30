@@ -6,7 +6,7 @@ import classes from "./AboutMe.module.css"
 
 //components
 import Nav from "../../Containers/Nav/Nav"
-import TopSection from "../../Containers/Profile_top_section/Top_section"
+import TopSection from "../../Components/Profile_top_section/Top_section"
 import ProfileTabs from "../../Containers/Profile_tabs/Profile_tabs"
 import BottomSection from "../../Containers/Profile_bottom_section/Bottom_section"
 
