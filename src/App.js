@@ -3,6 +3,7 @@ import React from 'react';
 
 //external
 import { BrowserRouter, Switch, Route } from "react-router-dom"
+import SimpleReactLightbox from "simple-react-lightbox";
 
 //Components
 import Projects from "./Pages/Projects/Projects"
@@ -13,19 +14,22 @@ import AboutMe from "./Pages/AboutMe/AboutMe"
 const App = () => {
 
   return (
+    <SimpleReactLightbox>
 
-    <BrowserRouter>
+      <BrowserRouter>
 
-      <Switch>
+        <Switch>
 
-        <Route path="/projects" exact component={Projects} />
-        <Route path="/technologies" exact component={Technologies} />
-        <Route path="/education" exact component={Education} />
-        <Route path="/about-me" exact component={AboutMe} />
+          <Route path="/" exact component={Projects} />
+          <Route path="/technologies" exact component={Technologies} />
+          <Route path="/education" exact component={Education} />
+          <Route path="/about-me" exact component={AboutMe} />
 
-      </Switch>
+        </Switch>
 
-    </BrowserRouter>
+      </BrowserRouter>
+      
+    </SimpleReactLightbox>
 
   );
 

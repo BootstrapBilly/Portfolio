@@ -8,6 +8,7 @@
     position: fixed;
     bottom: 0vh;
     background-color: #ebebeb;
+    z-index: 999;
     
 }
 

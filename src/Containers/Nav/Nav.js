@@ -27,12 +27,12 @@ const Nav = props => {
             <nav className={classes.nav} onMouseLeave={()=> set_active_icon(props.path)}>
 
                 <Navlink
-                    to="/projects"
+                    to="/"
                     test-handle="projects-link"
                     text="PROJECTS"
-                    img={active_icon === "/projects" ? projects_selected : projects}
-                    handleClick={() => set_active_icon("/projects")}
-                    handleMouseEnter={()=> set_active_icon("/projects")}
+                    img={active_icon === "/" ? projects_selected : projects}
+                    handleClick={() => set_active_icon("/")}
+                    handleMouseEnter={()=> set_active_icon("/")}
                 />
 
                 <Navlink
