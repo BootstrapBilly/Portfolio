@@ -7,8 +7,8 @@
     justify-self: center;
 }
 
-.project_type {
-    margin-top: -5vh;
+.project_type{
+    margin-top: -4%;
 }
 
 .inner_container {
@@ -49,4 +49,35 @@
         transform: scale(0.8);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
+}
+
+/* long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
+    
+    .mobile_description{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+/* very long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 800px) and (orientation: portrait) {
+    
+    .mobile_description{
+        font-size: 0.9rem;
+    }
+
+}
+
+/* landscape phone*/
+@media (orientation: landscape) {
+
+
+    .mobile_description{
+
+        font-size: 0.7rem;
+        color: red;
+    }
+
 }

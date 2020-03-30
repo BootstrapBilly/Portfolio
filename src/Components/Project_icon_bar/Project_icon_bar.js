@@ -12,9 +12,10 @@ const Project_icon_bar = props => {
     return (
 
         <div className={classes.footer_container}>
+            
+            <img className={classes.icon} src={github} alt="A github icon" onClick={props.handleClickGithub} />
+            <img className={classes.icon} src={livesite} alt="A Notes icon" onClick={props.handleClickLive} />
 
-            <img className={classes.icon} src={livesite} alt="A Notes icon" onClick={props.handleClickLive}/>
-            <img className={classes.icon} src={github} alt="A github icon" onClick={props.handleClickGithub}/>
 
         </div>
 

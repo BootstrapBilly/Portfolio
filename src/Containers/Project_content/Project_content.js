@@ -23,9 +23,9 @@ const Project = props => {
 
                 <SRLWrapper>
 
-                    <img className={classes.thumbnail} src={require(`../../Assets/Img/${props.thumbnail_name}.jpg`)} alt={props.thumbnail_desc} /> 
+                    <img className={classes.thumbnail} src={require(`../../Assets/Img/${props.thumbnail_name}`)} alt={props.thumbnail_desc} /> 
 
-                    {props.images.map(image => <img src={require(`../../Assets/Img/${image.name}.gif`)} alt={image.desc} style={{ display: "none" }} />)}
+                    {props.images.map(image => <img src={require(`../../Assets/Img/${image.name}`)} alt={image.desc} style={{ display: "none" }} />)}
 
                 </SRLWrapper>
 
@@ -33,7 +33,7 @@ const Project = props => {
 
                 {<div className={classes.mobile_description}>{props.mobile_description}</div>}
 
-                <span className={classes.mobile_description} style={props.color}>{props.tech_used}</span>
+                <div className={classes.mobile_description} style={props.color}>{props.tech_used}</div>
 
             </div>
 

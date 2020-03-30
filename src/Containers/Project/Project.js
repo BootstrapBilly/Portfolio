@@ -13,7 +13,7 @@ const Project = props => {
 
     return (
 
-        <div className={classes.container} style={{boxShadow: `1px 1px 1px 1px rgba(${props.rgb}, 0.507)`}}>
+        <div className={classes.container} style={{boxShadow: `1px 1px 1px 1px rgba(0,0,0, 0.507)`}}>
 
             <div className={classes.title} style={{color: `rgb(${props.rgb})`}}>{props.title}</div>
 

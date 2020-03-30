@@ -11,6 +11,17 @@
 }
 
 .icon {
-    width: 7vh;
-    height: 7vh;
+    width: 6.5vh;
+    height: 6.5vh;
+    margin-top: 9%;
+}
+
+/* long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
+    
+    .icon {
+        width: 6vh;
+        height: 6vh;
+    }
+
 }
