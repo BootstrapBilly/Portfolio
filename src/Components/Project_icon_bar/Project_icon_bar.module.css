@@ -10,7 +10,31 @@
 
 }
 
+.icon_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+}
+
 .icon {
-    width: 7vh;
-    height: 7vh;
+    width: 6.5vh;
+    height: 6.5vh;
+}
+
+.icon_text {
+    font-size: 0.7rem;
+    margin-top: 0.75vh;
+    font-weight: bold;
+}
+
+/* long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
+    
+    .icon {
+        width: 6vh;
+        height: 6vh;
+    }
+
 }

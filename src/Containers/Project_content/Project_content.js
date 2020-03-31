@@ -21,19 +21,29 @@ const Project = props => {
 
             <div className={classes.inner_container}>
 
-                <SRLWrapper>
+                {props.active_section === "gallery" ?
 
-                    <img className={classes.thumbnail} src={require(`../../Assets/Img/${props.thumbnail_name}.jpg`)} alt={props.thumbnail_desc} /> 
 
-                    {props.images.map(image => <img src={require(`../../Assets/Img/${image.name}.gif`)} alt={image.desc} style={{ display: "none" }} />)}
+                    <React.Fragment>
 
-                </SRLWrapper>
+                        <SRLWrapper>
 
-                <span className={classes.view_gallery} style={props.color}>View gallery</span>
+                            <img className={classes.thumbnail} src={require(`../../Assets/Img/${props.thumbnail_name}`)} alt={props.thumbnail_desc} style={props.thumbnail_clipping} />
 
-                {<div className={classes.mobile_description}>{props.mobile_description}</div>}
+                            {props.images.map(image => <img src={require(`../../Assets/Img/${image.name}`)} alt={image.desc} style={{ display: "none" }} />)}
 
-                <span className={classes.mobile_description} style={props.color}>{props.tech_used}</span>
+                        </SRLWrapper>
+
+                        <span className={classes.view_gallery}>VIEW GALLERY</span>
+
+                        <div className={classes.tech_used} style={props.color}>{props.tech_used}</div>
+
+                    </React.Fragment>
+
+                    :
+
+                    <div className={classes.mobile_description}>{props.mobile_description}</div>}
+
 
             </div>
 

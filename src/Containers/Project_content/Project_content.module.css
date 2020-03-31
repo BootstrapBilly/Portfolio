@@ -1,14 +1,14 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 .container {
-    height: 65%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-self: center;
 }
 
-.project_type {
-    margin-top: -5vh;
+.project_type{
+    margin-bottom: 5%;
 }
 
 .inner_container {
@@ -18,35 +18,83 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
 .thumbnail {
-    height: 11vh;
-    width: 11vh;
-    animation: pulse 2s infinite;
+    object-fit: contain;
+    height: 22vh;
 }
 
 .view_gallery{
     font-size: 0.75rem;
     font-weight: bold;
+    margin-top: 0.7vh;
 }
 
 .mobile_description {
-    font-size: 0.8rem;
-    padding: 0 1vw;
+    font-size: 0.85rem;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(0.8);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0);
+.tech_used {
+    font-size: 0.8rem;
+    padding: 0 5vw;
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
+    
+    .mobile_description{
+        font-size: 0.87rem;
     }
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+
+}
+
+
+/* very long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 800px) and (orientation: portrait) {
+    
+    .mobile_description{
+        font-size: 0.9rem;
     }
-    100% {
-        transform: scale(0.8);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+
+}
+/* small landscape phone*/
+@media (orientation: landscape) and (max-device-height: 400px){
+
+    .tech_used{
+        font-size: 0.6rem;
     }
+
+}
+
+/* landscape phone*/
+@media (orientation: landscape) {
+
+
+    .mobile_description{
+
+        font-size: 0.6rem;
+
+    }
+
+    .tech_used{
+        bottom: 28%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .project_type{
+        font-size: 0.8rem;
+    }
+
+    .view_gallery{
+        font-size: 0.7rem;
+    }
+
 }
