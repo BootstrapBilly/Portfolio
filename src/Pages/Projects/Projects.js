@@ -18,18 +18,20 @@ const Projects = props => {
 
             <Project
 
-                rgb="4, 154, 154"
+                rgb="197, 150, 255"
 
                 title="Schedule Manager"
-                project_type={<p>Fullstack Web Application</p>}
+                project_type={"Fullstack Web Application"}
 
-                thumbnail_name={"diary-screenshot.jpg"}
-                thumbnail_desc={"A view of the grid"}
+                thumbnail_name={"diary-thumb.jpg"}
+                thumbnail_desc={"A view of the grid on desktop"}
+                thumbnail_clipping={{objectPosition: "0% 96%"}}
 
                 images={[
 
-                    { name: "diary-add-appointment.gif", desc: "Adding an appointment" },
-                    { name: "diary_grid_showcase.gif", desc: "Other grid functions" },
+                    { name: "diary-screenshot.jpg", desc: "A view of the grid on mobile" },
+                    { name: "diary-add-appointment.gif", desc: "Adding an appointment on mobile" },
+                    { name: "diary_grid_showcase.gif", desc: "Other grid functions on mobile" },
                     { name: "diary_validation.gif", desc: "Form validation" },
                     { name: "diary_move_appointment.gif", desc: "Moving an appointment" }
 
@@ -41,7 +43,7 @@ const Projects = props => {
                 mobile_description={
 
                 <span>
-                <br/>My second React/fullstack project.<br/><br/>
+                My second React/fullstack project.<br/><br/>
                 A schedule manager for my sister's consultancy business, featuring a custom grid data struture. <br/><br/>
                 Clients can be added, deleted and updated. Appointments can be added, deleted and moved.<br/><br/>
                </span>
@@ -56,7 +58,7 @@ const Projects = props => {
                 rgb="242,71,106"
 
                 title="Window Cleaning Planner"
-                project_type={<p>Native Android Application</p>}
+                project_type={"Native Android Application"}
 
                 thumbnail_name={"diary-screenshot.jpg"}
                 thumbnail_desc={"A view of the grid"}
@@ -90,7 +92,7 @@ const Projects = props => {
                 rgb="66, 224, 63"
 
                 title="Window Cleaning Planner"
-                project_type={<p>Native Android Application</p>}
+                project_type={"Native Android Application"}
 
                 thumbnail_name={"diary-screenshot.jpg"}
                 thumbnail_desc={"A view of the grid"}

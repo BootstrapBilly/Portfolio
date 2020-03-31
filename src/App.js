@@ -16,7 +16,7 @@ const App = () => {
   return (
     <SimpleReactLightbox>
 
-      <BrowserRouter>
+      <BrowserRouter basename="/">
 
         <Switch>
 
