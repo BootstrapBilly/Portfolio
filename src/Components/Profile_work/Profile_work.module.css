@@ -82,13 +82,13 @@
 }
 
 /*small laptop */
-@media only screen and (min-width: 1200px) and (min-height: 768px) {
+@media only screen and (min-width: 1200px)  {
 
 
 }
 
 /*super-massive */
-@media only screen and (min-width: 1600px) and (min-height: 768px) {
+@media only screen and (min-width: 1600px)  {
 
     .text{font-size: 1.3rem;}
   

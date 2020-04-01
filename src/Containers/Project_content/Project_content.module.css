@@ -7,7 +7,7 @@
     justify-self: center;
 }
 
-.project_type{
+.project_type {
     margin-bottom: 5%;
 }
 
@@ -21,12 +21,64 @@
     position: relative;
 }
 
-.thumbnail {
-    object-fit: contain;
-    height: 22vh;
+.thumbnail_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.view_gallery{
+.thumbnail {
+
+    object-fit: cover;
+    height: 25vh;
+    width: 80%;
+
+}
+
+.thumbnail_hovered{
+    background-color: rgb(153, 186, 221);
+    height: 20vh;
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    animation: changeColor 1s;
+}
+
+.take_a_look{
+
+    position: relative;
+    bottom: -100px;
+    -webkit-animation: slide 1s forwards;
+    animation: slide 1s forwards;
+
+}
+
+@-webkit-keyframes slide {
+    100% { bottom: 0%; }
+}
+
+@keyframes slide {
+    100% { bottom: 0%; }
+}
+
+
+@keyframes changeColor {
+    0% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: rgb(153, 186, 221);
+    }
+  }
+
+.view_gallery {
     font-size: 0.75rem;
     font-weight: bold;
     margin-top: 0.7vh;
@@ -38,63 +90,185 @@
 
 .tech_used {
     font-size: 0.8rem;
-    padding: 0 5vw;
     position: absolute;
     bottom: 10%;
     text-align: center;
-    font-weight: bold;
-}
 
+}
 
 /* long portrait phone*/
+
 @media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
-    
-    .mobile_description{
+    .mobile_description {
         font-size: 0.87rem;
     }
-
 }
-
 
 /* very long portrait phone*/
+
 @media only screen and (max-device-width: 500px) and (min-device-height: 800px) and (orientation: portrait) {
-    
-    .mobile_description{
+    .mobile_description {
         font-size: 0.9rem;
     }
-
 }
-/* small landscape phone*/
-@media (orientation: landscape) and (max-device-height: 400px){
 
-    .tech_used{
+/* small landscape phone*/
+
+@media (orientation: landscape) and (max-device-height: 400px) {
+    .tech_used {
         font-size: 0.6rem;
     }
-
 }
 
 /* landscape phone*/
+
 @media (orientation: landscape) {
-
-
-    .mobile_description{
-
+    .mobile_description {
         font-size: 0.6rem;
-
     }
-
-    .tech_used{
+    .tech_used {
         bottom: 28%;
         margin: 0;
         padding: 0;
     }
+    .project_type {
+        font-size: 0.8rem;
+    }
+    .view_gallery {
+        font-size: 0.7rem;
+    }
+    .thumbnail{
+        height: 30vh;
+    }
+}
+
+/* long landscape phone*/
+
+@media only screen and (min-device-width: 600px) and (max-device-height: 500px) and (orientation: landscape) {}
+
+/*small tablet portrait*/
+
+@media (min-device-height: 800px) and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .project_type {
+        font-size: 1.3rem;
+    }
+    .view_gallery {
+        font-size: 1rem;
+    }
+    .tech_used {
+        font-size: 1.1rem;
+    }
+    .mobile_description {
+        font-size: 1.2rem;
+    }
+}
+
+/*small tablet landscape*/
+
+@media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
+    .project_type {
+        font-size: 1rem;
+    }
+    .tech_used {
+        font-size: 0.9rem;
+    }
+    .mobile_description {
+        font-size: 0.9rem;
+    }
+}
+
+/*! maybe useless - ipad portrait*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
+
+/*ipad landscape*/
+
+@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+    .project_type {
+        font-size: 1.25rem;
+    }
+    .tech_used {
+        font-size: 1rem;
+    }
+    .mobile_description {
+        font-size: 0.95rem;
+    }
+}
+
+.view_gallery {
+    font-size: 0.89rem;
+}
+
+/*Other tablet portrait*/
+
+@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {}
+
+/*Other tablet landscape*/
+
+@media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+    .project_type {
+        font-size: 1.25rem;
+    }
+    .tech_used {
+        font-size: 2.7vh;
+        bottom: 30%;
+    }
+}
+
+/*iPad pro portrait*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
     .project_type{
+        font-size: 1.8rem;
+    }
+
+    .tech_used{
+        font-size: 1.5rem;
+        bottom:0%
+    }
+    .mobile_description{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+/*small laptop */
+
+@media only screen and (min-width: 1200px){
+
+    .thumbnail{
+        height: 20vh;
+    }
+
+    .tech_used{
         font-size: 0.8rem;
     }
 
-    .view_gallery{
-        font-size: 0.7rem;
+    .mobile_description{
+        font-size: 0.8rem;
+    }
+}
+
+/*super-massive */
+
+@media only screen and (min-width: 1600px) and (min-height: 768px) {}
+
+/*iPad pro landscape*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .project_type{
+        font-size: 1.7rem;
     }
 
+    .tech_used{
+        font-size: 1.3rem;
+        bottom: 28%;
+    }
+
+    .mobile_description{
+        font-size: 1.4rem;
+    }
 }

@@ -88,8 +88,22 @@
 
 }
 
+/*Other tablet landscape*/
+
+@media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+
+    .nav {
+        width: 6.5%;
+        height: 70%;
+        flex-direction: column;
+        top:13%;
+        border-radius: 10px;
+        left:3%;
+    }
+}
+
 /*small laptop */
-@media only screen and (min-width : 1200px) and (min-height : 768px){
+@media only screen and (min-width: 1200px){
 
     .nav {
         width: 5.5%;
@@ -97,17 +111,13 @@
         flex-direction: column;
         top:13%;
         border-radius: 10px;
-        left:5%;
+        left:3%;
     }
 
 }
 
 /*iPad Pro landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
   
     .nav {
         width: 9%;

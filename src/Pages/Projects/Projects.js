@@ -18,14 +18,14 @@ const Projects = props => {
 
             <Project
 
-                rgb="197, 150, 255"
+                rgb="58,95,205"
 
                 title="Schedule Manager"
                 project_type={"Fullstack Web Application"}
 
-                thumbnail_name={"diary-thumb.jpg"}
+                thumbnail_name={"diary-thumb-min.png"}
                 thumbnail_desc={"A view of the grid on desktop"}
-                thumbnail_clipping={{objectPosition: "0% 96%"}}
+                // thumbnail_clipping={{objectPosition: "0% 96%"}}
 
                 images={[
 
@@ -55,12 +55,12 @@ const Projects = props => {
 
             <Project
 
-                rgb="242,71,106"
+                rgb="102,102,102"
 
                 title="Window Cleaning Planner"
                 project_type={"Native Android Application"}
 
-                thumbnail_name={"diary-screenshot.jpg"}
+                thumbnail_name={"window-thumb-alt.png"}
                 thumbnail_desc={"A view of the grid"}
 
                 images={[
@@ -77,10 +77,10 @@ const Projects = props => {
 
                 mobile_description={
                 
-                <p>My first React and mobile project.
-                <p>A mobile app used to keep track of customers, payments and mass text if needed.
-                <p>3 Layered crud operation architecure with caskading deletion.
-                </p></p></p>
+                <span>My first React and mobile project.<br/><br/>
+                A mobile app used to keep track of customers, payments and mass text if needed.<br/><br/>
+                3 Layered crud operation architecure with caskading deletion.<br/><br/>
+                </span>
 
                 }
 
