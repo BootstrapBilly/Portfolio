@@ -26,3 +26,124 @@
     height: 90%;
     width: 90%;
 }
+
+/* landscape phone*/
+@media (orientation: landscape) {
+
+        .check_box{
+            width: 4%;
+            height: 100%;
+        }
+
+        .container {
+            font-size: 1rem;
+            height: 8.5%;
+        }
+    
+    }
+    
+    /*small tablet portrait*/
+    
+    @media (min-device-height: 800px) and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+
+
+    }
+    
+    /*small tablet landscape*/
+    
+    @media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
+    
+        .container{
+            margin-left: 5%;
+        }
+    }
+    
+    /*! maybe useless - ipad portrait*/
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+
+    }
+    
+    /*ipad landscape*/
+    
+    @media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+    
+        .check_box{
+            height: 80%;
+            margin-right: 1vw;
+        }
+
+    }
+    
+    /*Other tablet portrait*/
+    
+    @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
+
+        .check_box{
+            border: 1px solid black;
+        }
+    }
+    
+    /*Other tablet landscape*/
+    
+    @media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+    
+
+        .check_box{
+            border: 1px solid black;
+            margin-right: 1vw;
+        }
+    
+    
+    }
+    
+    /*iPad pro portrait*/
+    
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+        
+        .container{
+            font-size: 1.4rem;
+        }
+    }
+    
+    
+    
+    /*small laptop */
+    
+    @media only screen and (min-width: 1200px){
+    
+        .check_box{
+            height: 80%;
+            width: 3.5%;
+            margin-right: 1vw;
+        }
+
+        .check_box:hover{
+            cursor: pointer;
+        }
+
+        .container{
+            height: 7%;
+        }
+
+    }
+    
+    /*super-massive */
+    
+    @media only screen and (min-width: 1600px) and (min-height: 768px) {}
+    
+    /*iPad pro landscape*/
+    
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    
+        .check_box{
+            height: 80%;
+        }
+
+        .container{
+            font-size: 1.4rem;
+        }
+
+    }

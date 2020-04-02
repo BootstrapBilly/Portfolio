@@ -24,7 +24,7 @@
 @media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
     
     .container{
-        height: 55vh;
+        height: 52vh;
     }
 
 }
@@ -44,7 +44,24 @@
 
 
     .container{
+        width: 43%;
+        margin-left: 5%;
+        padding-bottom: 0;
+        height: 90vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
 
+    .title{
+        font-size: 0.9rem;
+    }
+
+}
+/* landscape phone*/
+@media (orientation: landscape) and (min-device-height: 400px)  {
+
+
+    .container{
         width: 43%;
         margin-left: 5%;
         padding-bottom: 0;
@@ -125,7 +142,7 @@
 @media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
 
     .container{
-        height: 75vh;
+        height: 80vh;
     }
 
     .title{

@@ -40,6 +40,14 @@
     flex-wrap: wrap;
     margin-left: 15%;
     margin-top: 2%;
+    
+}
+
+.filter_by_type {
+
+    margin-left: 14%;
+    padding: 1% 2%;
+
 }
 
 }
@@ -56,14 +64,7 @@
 
 }
 
-/*! maybe useless - ipad portrait*/
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-
-    .container{
-        
-    }
-}
 
 /*ipad landscape*/
 
@@ -73,11 +74,22 @@
         margin-left: 12%;
         margin-top: 3%;
     }
+
+    .filter_by_type{
+        
+        margin-left: 8%;
+    }
 }
 
 /*Other tablet portrait*/
 
-@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {}
+@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
+
+    .filter_by_type{
+        margin-left: 12%;
+    }
+
+}
 
 /*Other tablet landscape*/
 
@@ -88,11 +100,24 @@
         margin-top: 2%;
     }
 
+    .filter_by_type{
+        margin-right: 6%;
+    }
+
+
+
 }
 
 /*iPad pro portrait*/
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    .filter_by_type{
+        margin-left: 13%;
+        font-size: 1.2rem;
+    }
+
+}
 
 
 
@@ -104,6 +129,19 @@
         margin-left: 6%;
         margin-top: 3%;
     }
+
+    .filter_by_type{
+        margin-right: 6%;
+    }
+
+    .filter_by_type:hover{
+        cursor: pointer;
+    }
+
+    .filter_by_type:hover{
+        transform: scale(1.02);
+    }
+
 }
 
 /*super-massive */
@@ -117,4 +155,11 @@
     .container{
         margin-left: 10%;
     }
+
+    
+    .filter_by_type{
+        margin-left: 13%;
+        font-size: 1.2rem;
+    }
+
 }

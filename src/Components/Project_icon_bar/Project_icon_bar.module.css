@@ -26,7 +26,15 @@
 .icon_text {
     font-size: 0.7rem;
     margin-top: 0.75vh;
-    font-weight: bold;
+}
+
+@media (orientation: landscape) {
+
+    .icon {
+        width: 4vw;
+        height: 4vw;
+    }
+
 }
 
 /* long portrait phone*/

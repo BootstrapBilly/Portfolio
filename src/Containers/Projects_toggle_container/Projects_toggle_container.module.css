@@ -49,3 +49,171 @@
 @keyframes slide {
     100% { bottom: 7%; }
 }
+
+@media (orientation: landscape) {
+
+    .container{
+        padding-left: 10%;
+        height: 100%;
+        top:-10vh
+    }
+
+    .close_icon{
+        top: 14vh;
+        right: 28vh;
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .apply_button{
+        font-size: 0.9rem;
+        padding: 1% 2%;
+        position: absolute;
+        right: 47%;
+        bottom: 10%;
+    }
+
+}
+
+/* landscape phone*/
+@media (orientation: landscape) and (min-device-height: 400px) {
+
+        .container{
+            padding-left: 10%;
+            height: 100%;
+            top:-10vh
+        }
+
+        .close_icon{
+            top: 14vh;
+            right: 28vh;
+            width: 2.5vw;
+            height: 2.5vw;
+        }
+    
+        .apply_button{
+            font-size: 0.9rem;
+            padding: 1% 2%;
+            position: absolute;
+            right: 47%;
+            bottom: 5%;
+        }
+    }
+    
+    /*small tablet portrait*/
+    
+    @media (min-device-height: 800px) and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+
+        .container{
+            z-index: 9001;
+            height: 100%;
+            top:0vh;
+        }
+
+    }
+    
+    /*small tablet landscape*/
+    
+    @media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
+    
+        .close_icon{
+            top: 15vh
+        }
+
+    }
+    
+    /*! maybe useless - ipad portrait*/
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+    
+    }
+    
+    /*ipad landscape*/
+    
+    @media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+    
+    
+        .container{
+            margin-top: 8vh;
+        }
+
+        .close_icon{
+            top:8vh
+        }
+
+        .apply_button{
+            margin-right: 6vw;
+            margin-bottom: 5vh;
+        }
+    }
+    
+    /*Other tablet portrait*/
+    
+    @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {}
+    
+    /*Other tablet landscape*/
+    
+    @media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+    
+   .apply_button{
+       right: 55%;
+   }
+    
+    }
+    
+    /*iPad pro portrait*/
+    
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+        .apply_button{
+            font-size: 1.4rem;
+        }
+    }
+    
+    
+    
+    /*small laptop */
+    
+    @media only screen and (min-width: 1200px){
+    
+        .close_icon{
+            height: 3vh;
+            width: 3vh;
+            top: 6vh;
+        }
+
+        .container{
+            margin-top: 5%;
+        }
+
+        .apply_button{
+            margin-bottom: 11vh;
+            margin-right: 9vw;
+        }
+     
+    }
+    
+    /*super-massive */
+    
+    @media only screen and (min-width: 1600px) and (min-height: 768px) {}
+    
+    /*iPad pro landscape*/
+    
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    
+   
+        .container{
+            margin-top: 8vh;
+        }
+
+        .close_icon{
+            top: 8vh;
+        }
+
+        .apply_button{
+            margin-bottom: 5vh;
+            font-size: 1.4rem;
+        }
+    }

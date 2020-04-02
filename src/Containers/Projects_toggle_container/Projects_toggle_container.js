@@ -25,7 +25,7 @@ const ToggleContainer = props => {
 
         <div className={classes.container} style={{ display: props.filters_open ? "block" : "none" }}>
 
-            <img className={classes.close_icon} src={close} alt="A Navigation icon" onClick={props.handle_close_button} />
+            <img className={classes.close_icon} src={close} alt="A Navigation icon" onClick={props.handle_apply_press.bind(this, options)} />
 
             {
 
