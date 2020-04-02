@@ -1,12 +1,13 @@
 .container {
     width: 85%;
-    height: 55vh;
-    margin-top: 5%;
+    height: 52vh;
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
     position: relative;
     padding-bottom: 17%;
-    box-shadow: 3px 3px 9px 3px rgba(0,0,0,0.29)
+    box-shadow: 3px 3px 9px 3px rgba(0,0,0,0.29);
+    background-color: white;
 }
 
 .title {

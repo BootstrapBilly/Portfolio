@@ -14,7 +14,7 @@ const Project = props => {
 
     return (
 
-        <div className={classes.container}>
+        <div className={classes.container} style={{display:props.visible}}>
 
             <div className={classes.title} style={{color: `rgb(${props.rgb})`}}>{props.title}</div>
 

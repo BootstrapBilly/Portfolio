@@ -1,0 +1,51 @@
+.container{
+
+    background-color: #dddddd;
+    width: 100vw;
+    height: 88%;
+    position: fixed;
+    position: -webkit-fixed; 
+    bottom: -200vh;
+    z-index: 2;
+    padding-top: 10%;
+    -webkit-animation: slide 0.75s forwards;
+    animation: slide 0.75s forwards;
+    
+}
+
+.close_icon{
+    width: 3vh;
+    height: 3vh;
+    position: absolute;
+    right: 5vw;
+    top: 7vw;
+}
+
+.apply_button_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    position: absolute;
+    bottom: 15vh;
+}
+
+.apply_button {
+
+    color: black;
+    font-weight: 900;
+    padding: 2% 2%;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+@-webkit-keyframes slide {
+    100% { bottom: 7%; }
+}
+
+@keyframes slide {
+    100% { bottom: 7%; }
+}

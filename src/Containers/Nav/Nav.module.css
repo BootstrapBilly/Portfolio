@@ -7,8 +7,10 @@
     align-items: center;
     position: fixed;
     bottom: 0vh;
-    background-color: #ebebeb;
     z-index: 999;
+    border-top:0.5px solid black;
+    background-color: #DDDDDD;
+    
     
 }
 
@@ -21,6 +23,8 @@
         flex-direction: column;
         top: 0;
         left: 0;
+        border: none;
+        border-right: 0.5px solid black;
 
     }
 
@@ -36,7 +40,8 @@
         flex-direction: column;
         top:7%;
         border-radius: 10px;
-        left:2%
+        left:2%;
+        border: 2px solid white;
 
     }
 
@@ -109,9 +114,11 @@
         width: 5.5%;
         height: 50%;
         flex-direction: column;
-        top:13%;
+        top:20%;
         border-radius: 10px;
-        left:3%;
+        left:1%;
+        background-color: #DDDDDD;
+        border: 3px solid white;
     }
 
 }

@@ -1,5 +1,5 @@
 //core react
-import React from "react"
+import React, { useState } from "react"
 
 //css
 import classes from "./Projects.module.css"
@@ -7,118 +7,166 @@ import classes from "./Projects.module.css"
 //components
 import Nav from "../../Containers/Nav/Nav"
 import Project from "../../Containers/Project/Project"
+import ToggleContainer from "../../Containers/Projects_toggle_container/Projects_toggle_container"
 
 const Projects = props => {
 
+    const [filters_open, set_filters_open] = useState(false)
+    const [active_filters, set_active_filters] = useState([])
+
+    const check_active_filters = type => {
+
+        if(!active_filters.length) return "block"
+
+        else {
+
+        if(active_filters.find(item => item === type)) return "block"
+
+        else return "none"
+
+        }
+ 
+    }
+
     return (
 
-        <div className={classes.container}>
+        <React.Fragment>
 
-            <Nav path={props.location.pathname} />
+            <div className={classes.filter_button_container}>
 
-            <Project
+                <div className={classes.filter_by_type} onClick={() => set_filters_open(true)}>FILTER BY PROJECT TYPE</div>
 
-                rgb="58,95,205"
+            </div>
 
-                title="Schedule Manager"
-                project_type={"Fullstack Web Application"}
+            <ToggleContainer
 
-                thumbnail_name={"diary-thumb-min.png"}
-                thumbnail_desc={"A view of the grid on desktop"}
-                // thumbnail_clipping={{objectPosition: "0% 96%"}}
+                filters_open={filters_open}
 
-                images={[
-
-                    { name: "diary-screenshot.jpg", desc: "A view of the grid on mobile" },
-                    { name: "diary-add-appointment.gif", desc: "Adding an appointment on mobile" },
-                    { name: "diary_grid_showcase.gif", desc: "Other grid functions on mobile" },
-                    { name: "diary_validation.gif", desc: "Form validation" },
-                    { name: "diary_move_appointment.gif", desc: "Moving an appointment" }
-
-                ]}
-
-                handleClickGithub={() => window.open("https://github.com/BootstrapBilly/1to1", "_blank")}
-                handleClickLive={() => window.open("https://to1-13f69.firebaseapp.com/", "_blank")}
-
-                mobile_description={
-
-                <span>
-                My second React/fullstack project.<br/><br/>
-                A schedule manager for my sister's consultancy business, featuring a custom grid data struture. <br/><br/>
-                Clients can be added, deleted and updated. Appointments can be added, deleted and moved.<br/><br/>
-               </span>
-
+                handle_apply_press={(options) => {
+                    set_active_filters(options)
+                    set_filters_open(false)
+                }
                 }
 
-                tech_used="React, Node, Express, MongoDb, Mongoose"
+                handle_close_button={() => set_filters_open(false)}
+
             />
 
-            <Project
+            <div className={classes.container}>
 
-                rgb="102,102,102"
+                <Nav path={props.location.pathname} />
 
-                title="Window Cleaning Planner"
-                project_type={"Native Android Application"}
+                <Project
 
-                thumbnail_name={"window-thumb-alt.png"}
-                thumbnail_desc={"A view of the grid"}
+                    visible={check_active_filters("Full-stack")}
 
-                images={[
+                    rgb="58,95,205"
 
-                    { name: "diary-add-appointment.gif", desc: "Adding an appointment" },
-                    { name: "diary_grid_showcase.gif", desc: "Other grid functions" },
-                    { name: "diary_validation.gif", desc: "Form validation" },
-                    { name: "diary_move_appointment.gif", desc: "Moving an appointment" }
+                    title="Schedule Manager"
+                    project_type={"Fullstack Web Application"}
 
-                ]}
+                    thumbnail_name={"diary-thumb-min.png"}
+                    thumbnail_desc={"A view of the grid on desktop"}
+                    // thumbnail_clipping={{objectPosition: "0% 96%"}}
 
-                handleClickGithub={() => window.open("https://github.com/BootstrapBilly/1to1", "_blank")}
-                handleClickLive={() => window.open("https://to1-13f69.firebaseapp.com/", "_blank")}
+                    images={[
 
-                mobile_description={
-                
-                <span>My first React and mobile project.<br/><br/>
-                A mobile app used to keep track of customers, payments and mass text if needed.<br/><br/>
-                3 Layered crud operation architecure with caskading deletion.<br/><br/>
-                </span>
+                        { name: "diary-screenshot.jpg", desc: "A view of the grid on mobile" },
+                        { name: "diary-add-appointment.gif", desc: "Adding an appointment on mobile" },
+                        { name: "diary_grid_showcase.gif", desc: "Other grid functions on mobile" },
+                        { name: "diary_validation.gif", desc: "Form validation" },
+                        { name: "diary_move_appointment.gif", desc: "Moving an appointment" }
 
-                }
+                    ]}
 
-                tech_used="React Native, Android studios, Node, Express, MongoDb, Mongoose"
-            />
+                    handleClickGithub={() => window.open("https://github.com/BootstrapBilly/1to1", "_blank")}
+                    handleClickLive={() => window.open("https://to1-13f69.firebaseapp.com/", "_blank")}
 
-            <Project
+                    mobile_description={
 
-                rgb="66, 224, 63"
+                        <span>
+                            My second React/fullstack project.<br /><br />
+        A schedule manager for my sister's consultancy business, featuring a custom grid data struture. <br /><br />
+        Clients can be added, deleted and updated. Appointments can be added, deleted and moved.<br /><br />
+                        </span>
 
-                title="Window Cleaning Planner"
-                project_type={"Native Android Application"}
+                    }
 
-                thumbnail_name={"diary-screenshot.jpg"}
-                thumbnail_desc={"A view of the grid"}
+                    tech_used="React, Node, Express, MongoDb, Mongoose"
+                />
 
-                images={[
+                <Project
 
-                    { name: "diary-add-appointment.gif", desc: "Adding an appointment" },
-                    { name: "diary_grid_showcase.gif", desc: "Other grid functions" },
-                    { name: "diary_validation.gif", desc: "Form validation" },
-                    { name: "diary_move_appointment.gif", desc: "Moving an appointment" }
+                    visible={check_active_filters("Full-stack")}
 
-                ]}
+                    rgb="102,102,102"
 
-                handleClickGithub={() => window.open("https://github.com/BootstrapBilly/1to1", "_blank")}
-                handleClickLive={() => window.open("https://to1-13f69.firebaseapp.com/", "_blank")}
+                    title="Window Cleaning Planner"
+                    project_type={"Native Android Application"}
 
-                mobile_description={
-                <span>Yes</span>
+                    thumbnail_name={"window-thumb-alt.png"}
+                    thumbnail_desc={"A view of the grid"}
 
-                }
+                    images={[
 
-                tech_used="React Native, Android studios, Node, Express, MongoDb, Mongoose"
-            />
+                        { name: "diary-add-appointment.gif", desc: "Adding an appointment" },
+                        { name: "diary_grid_showcase.gif", desc: "Other grid functions" },
+                        { name: "diary_validation.gif", desc: "Form validation" },
+                        { name: "diary_move_appointment.gif", desc: "Moving an appointment" }
+
+                    ]}
+
+                    handleClickGithub={() => window.open("https://github.com/BootstrapBilly/1to1", "_blank")}
+                    handleClickLive={() => window.open("https://to1-13f69.firebaseapp.com/", "_blank")}
+
+                    mobile_description={
+
+                        <span>My first React and mobile project.<br /><br />
+        A mobile app used to keep track of customers, payments and mass text if needed.<br /><br />
+        3 Layered crud operation architecure with caskading deletion.<br /><br />
+                        </span>
+
+                    }
+
+                    tech_used="React Native, Android studios, Node, Express, MongoDb, Mongoose"
+                />
+
+                <Project
+
+                    visible={check_active_filters("Full-stack")}
+
+                    rgb="66, 224, 63"
+
+                    title="Window Cleaning Planner"
+                    project_type={"Native Android Application"}
+
+                    thumbnail_name={"diary-screenshot.jpg"}
+                    thumbnail_desc={"A view of the grid"}
+
+                    images={[
+
+                        { name: "diary-add-appointment.gif", desc: "Adding an appointment" },
+                        { name: "diary_grid_showcase.gif", desc: "Other grid functions" },
+                        { name: "diary_validation.gif", desc: "Form validation" },
+                        { name: "diary_move_appointment.gif", desc: "Moving an appointment" }
+
+                    ]}
+
+                    handleClickGithub={() => window.open("https://github.com/BootstrapBilly/1to1", "_blank")}
+                    handleClickLive={() => window.open("https://to1-13f69.firebaseapp.com/", "_blank")}
+
+                    mobile_description={
+                        <span>Yes</span>
+
+                    }
+
+                    tech_used="React Native, Android studios, Node, Express, MongoDb, Mongoose"
+                />
 
 
-        </div>
+            </div>
+
+        </React.Fragment>
 
     )
 

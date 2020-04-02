@@ -13,12 +13,23 @@
     display: none;
 }
 
-.mobile_prompt{
+.filter_button_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
 
-    width: 85%;
-    font-size: 0.8rem;
+.filter_by_type {
+
+    color: black;
+    font-weight: 900;
+    padding: 2% 2%;
+    border: 2px solid black;
     text-align: center;
-    margin-top: 1vh;
+    font-size: 0.8rem;
+
 }
 
 /* landscape phone*/

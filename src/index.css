@@ -25,6 +25,7 @@ code {
   margin: 0;
   overflow-y: scroll;
   -ms-overflow-style: none;
+  background-color: #DDDDDD;
 }
 
 #root::-webkit-scrollbar{

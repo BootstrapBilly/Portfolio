@@ -37,28 +37,7 @@
 
 }
 
-.thumbnail_hovered{
-    background-color: rgb(153, 186, 221);
-    height: 20vh;
-    width: 80%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    cursor: pointer;
-    font-weight: 900;
-    animation: changeColor 1s;
-}
 
-.take_a_look{
-
-    position: relative;
-    bottom: -100px;
-    -webkit-animation: slide 1s forwards;
-    animation: slide 1s forwards;
-
-}
 
 @-webkit-keyframes slide {
     100% { bottom: 0%; }
@@ -244,10 +223,33 @@
 
     .tech_used{
         font-size: 0.8rem;
+        bottom: 40%;
     }
 
     .mobile_description{
         font-size: 0.8rem;
+    }
+
+    .thumbnail_hovered{
+        background-color: rgb(153, 186, 221);
+        height: 20vh;
+        width: 80%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        font-weight: 900;
+        animation: changeColor 1s;
+    }
+    
+    .take_a_look{
+    
+        position: relative;
+        bottom: -100px;
+        -webkit-animation: slide 1s forwards;
+        animation: slide 1s forwards;
     }
 }
 

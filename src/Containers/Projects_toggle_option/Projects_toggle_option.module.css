@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    height: 12%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1vw 1vw;
+    margin-left: 10%;
+    
+}
+
+.check_box{
+    background-color: white;
+    width: 10%;
+    height: 65%;
+    border-radius: 10%;
+    margin-right: 3vw;
+    border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check_icon{
+
+    height: 90%;
+    width: 90%;
+}
