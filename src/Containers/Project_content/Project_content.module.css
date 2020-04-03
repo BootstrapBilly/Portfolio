@@ -201,7 +201,7 @@
         font-size: 0.95rem;
     }
     .thumbnail{
-        height: 25vh;
+        height: 22vh;
     }
 }
 
@@ -211,7 +211,23 @@
 
 /*Other tablet portrait*/
 
-@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {}
+@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
+
+    .tech_used{
+        bottom: 20%;
+    }
+
+    .thumbnail{
+        height: 22vh;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+        .thumbnail{
+            height: 21vh;
+        }
+
+      }
+}
 
 /*Other tablet landscape*/
 
@@ -222,6 +238,9 @@
     .tech_used {
         font-size: 2.7vh;
         bottom: 44%;
+    }
+    .thumbnail{
+        height: 28.5vh;
     }
 }
 
@@ -239,6 +258,11 @@
     }
     .mobile_description{
         font-size: 1.6rem;
+    }
+
+    .thumbnail{
+
+        height: 21vh;
     }
 }
 
@@ -286,9 +310,6 @@
     }
 }
 
-/*super-massive */
-
-@media only screen and (min-width: 1600px) and (min-height: 768px) {}
 
 /*iPad pro landscape*/
 
@@ -306,4 +327,14 @@
     .mobile_description{
         font-size: 1.4rem;
     }
+}
+
+/*super-massive */
+@media only screen and (min-width: 1600px)  {
+
+.project_type{
+    font-size: 1.1rem;
+}
+  
+
 }

@@ -1,0 +1,362 @@
+.container {
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+    position: relative;
+   align-items: center;
+}
+
+.top_section {
+
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: whitesmoke;
+    width: 100%;
+    padding-left: 10%;
+
+}
+
+.image {
+    margin-left: 2%;
+    height: 19vh;
+    width: 19vh;
+
+}
+
+.caption{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1vh;
+    font-size: 0.9rem;
+
+}
+
+.name{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: #555355;
+}
+
+.email{
+
+    color: #737073
+}
+
+.bottom_section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 49%;
+    width: 100%;
+    color: #737073
+    
+    
+}
+
+.text{
+    
+    padding-left:5%;
+    padding-right:25%;
+    color: black;
+    font-size: 0.95rem;
+
+}
+
+.spot_container{
+
+    width: 24%;
+    margin-top: 17%;
+    margin-right: 1%;
+    height: 74%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.image_big{
+
+    display: none;
+}
+
+
+/* long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
+    
+    .top_section{
+        height: 35%;
+    }
+
+    .name{
+        font-size: 1.3rem;
+    }
+
+    .email{
+        font-size: 1.1rem;
+    }
+   .text{
+       margin-right: 5%;
+       font-size: 0.97rem;
+   }
+   .image{
+    width: 16vh;
+    height: 16vh;
+    margin-bottom: 1vh;
+}
+   
+}
+
+/* very long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 800px) and (orientation: portrait) {
+    
+    .top_section{
+        height: 35%;
+    }
+
+    .name{
+        font-size: 1.4rem;
+        margin-top: 1vh;
+    }
+
+    .email{
+        font-size: 1.2rem;
+    }
+   .text{
+       margin-right: 5%;
+       font-size: 1.1rem;
+   }
+
+}
+
+/* landscape phone*/
+@media (orientation: landscape){
+
+
+    .container{
+        margin-left: 14%;
+    }
+
+    .top_section{
+        height: 50%;
+    }
+
+    .text{
+        font-size: 1.7vw;
+        margin-right: 20%;
+    }
+
+    .image{
+
+        width: 13vw;
+        height: 13vw;
+        margin-bottom: 1vh;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+        .text{
+            font-size: 1.2vw;
+        }
+
+      }
+
+}
+
+
+
+
+/*small tablet portrait*/
+@media (min-device-height: 800px) and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .image, .caption, .text{
+        margin-left: 18%;
+    }
+
+    .image{
+
+        height: 15vh;
+        width: 15vh;
+    }
+
+    .name{
+        font-size: 1.5rem;
+        margin-top: 1.5vh;
+    }
+
+    .email {
+
+        font-size: 1.3rem;
+    }
+
+    .text{
+        font-size: 1.2rem;
+    }
+
+
+}
+    
+/*small tablet landscape*/
+@media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    .image, .caption, .text{
+        margin-left: 10%;
+    }
+
+}
+
+/*! maybe useless - ipad portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+
+
+}
+
+/*ipad landscape*/
+@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .image, .caption, .text{
+        margin-left: 13%;
+    }
+
+    .top_section{
+        height: 40%;
+    }
+
+    .name{
+        font-size: 1.6rem;
+    }
+
+    .email{
+        font-size: 1.4rem;
+    }
+
+    .text{
+
+        font-size: 1.2rem;
+    }
+
+}
+
+/*Other tablet portrait*/
+@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
+   
+  
+}
+
+/*Other tablet landscape*/
+@media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+
+
+}
+
+/*iPad pro portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    .image, .caption, .text{
+        margin-left: 14%;
+    }
+
+    .name{
+        font-size: 2rem;
+    }
+    
+    .email{
+        font-size: 1.7rem;
+    }
+
+    .top_section{
+        height: 35%;
+    }
+
+    .text{
+        font-size: 1.6rem;
+        margin-right: 12%;
+    }
+
+}
+
+/*iPad pro landscape*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+ 
+
+
+
+}
+
+/*small laptop */
+@media only screen and (min-width: 1200px)  {
+
+    .image_big, .caption, .text {
+
+        margin-left: 6%;
+    }
+
+    .image_big{
+
+        display: block;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .top_section{
+        height: 40%;
+    }
+
+    .name{
+        margin-top: 2vh;
+        font-size: 1.4rem;
+    }
+
+    .email{
+        font-size: 1.2rem;
+    }
+
+    .text{
+        margin-right: 30%;
+        font-size: 1.1rem;
+    }
+    
+
+}
+
+/*super-massive */
+@media only screen and (min-width: 1600px)  {
+
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .image_big, .caption, .text {
+
+        margin-left: 3.5%;
+    }
+
+    .top_section{
+        height: 35%;
+    }
+  
+
+}

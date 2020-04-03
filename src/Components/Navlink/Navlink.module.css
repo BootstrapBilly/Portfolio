@@ -60,21 +60,28 @@
     }
 }
 
-/* Galaxy tab 10 portrait */
+/*Other tablet portrait*/
 
-@media (min-device-width: 800px) 
-  and (max-device-width: 1280px) 
-  and (orientation: portrait){
-
+@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
     .icon {
-        width: 5vh;
-        height: 5vh
+        width: 6.5vh;
+        height: 6.5vh
     }
     .link_text {
         font-size: 0.7rem;
+        margin-top: 1vh;
+    }
+}
+
+  
+@media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+
+    .icon {
+        width: 4.5vw;
+        height: 4.5vw
     }
 
-  }
+}
 
 /*ipad PRo 12.9" portrait*/
 
@@ -101,11 +108,7 @@
 }
 
 /*iPad Pro landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
   
     .icon {
         width: 7vh;
@@ -120,17 +123,18 @@
 }
 
 
-@media only screen and (min-width: 1900px) and (min-device-height: 800px) {
+/*super-massive */
+@media only screen and (min-width: 1600px)  {
 
- .icon {
-        width: 6vh;
-        height: 6vh
+    .icon {
+        width: 70%;
+        height: 70%
     }
-
+     
     .link_text {
-        font-size: 1.23vh;
-        margin-top: 1vh;
+        font-size: 55%;
     }
-}
+   
+   }
 
 

@@ -58,6 +58,9 @@
 
     .container{
         margin-top: 1vh;
+        justify-content: space-evenly;
+        margin-left: 7%;
+        margin-top: 5%;
     }
 
 }
@@ -65,17 +68,22 @@
 /*ipad landscape*/
 @media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
 
+    .container{
+        margin-top: 1%;
+    }
     
 }
 
 /*Other tablet portrait*/
 @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
    
-  
+
+
 }
 
 /*Other tablet landscape*/
 @media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+
 
 
 }

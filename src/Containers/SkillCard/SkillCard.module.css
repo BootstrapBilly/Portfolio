@@ -5,7 +5,7 @@
     margin: 2.5% 0;
     border-radius: 5%;
     box-shadow: 3px 3px 3px 3px rgba(49, 49, 49, 0.1);
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .title_container{
@@ -85,6 +85,9 @@
 /*! maybe useless - ipad portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 
+    .container{
+        width: 25%;
+    }
 
 }
 
@@ -97,7 +100,7 @@
 /*Other tablet portrait*/
 @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
    
-  
+
 }
 
 /*Other tablet landscape*/

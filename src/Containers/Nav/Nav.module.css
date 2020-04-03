@@ -8,10 +8,8 @@
     position: fixed;
     bottom: 0vh;
     z-index: 999;
-    border-top:0.5px solid black;
+    border-top:0.5px solid #737073;
     background-color: #DDDDDD;
-
-    
     
 }
 
@@ -25,7 +23,7 @@
         top: 0;
         left: 0;
         border: none;
-        border-right: 0.5px solid black;
+        border-right:0.5px solid #737073;
 
     }
 
@@ -42,7 +40,8 @@
         top:7%;
         border-radius: 10px;
         left:2%;
-        border: 1px solid black;
+        border:0.5px solid #737073;
+        background-color: whitesmoke;
 
     }
 
@@ -60,7 +59,9 @@
         top:18%;
         border-radius: 10px;
         left:2%;
-        border: 1px solid black;
+        border:0.5px solid #737073;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.329);
     }
 
 }
@@ -70,13 +71,16 @@
 
 @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
     .nav {
-        width: 12vw;
+        width: 14vw;
         height: 50%;
         flex-direction: column;
         top:20%;
         border-radius: 10px;
         left:2%;
-        border: 1px solid black;
+        border:0.5px solid #737073;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.329);
+        border-radius: 0;
     }
 }
 
@@ -91,7 +95,9 @@
         flex-direction: column;
         top:20%;
         border-radius: 10px;
-        left:2%
+        left:2%;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.329);
+        border-radius: 0;
     }
 
 }
@@ -105,9 +111,10 @@
         height: 70%;
         flex-direction: column;
         top:13%;
-        border-radius: 10px;
         left:3%;
-        border: 1px solid black;
+        border:0.5px solid #737073;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.329);
     }
 }
 
@@ -121,8 +128,10 @@
         top:20%;
         border-radius: 10px;
         left:1%;
-        background-color: #DDDDDD;
-        border: 1px solid black;
+        border:0.5px solid #737073;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.329);
+        border-radius: 0;
     }
 
 }
@@ -137,7 +146,21 @@
         top:20%;
         border-radius: 10px;
         left:1.5%;
+        border-radius: 0;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.329);
     }
+
+}
+
+/*super-massive */
+@media only screen and (min-width: 1600px)  {
+
+ .nav{
+     width: 4%;
+     height: 40%;
+     top: 25%;
+ }
+  
 
 }
 

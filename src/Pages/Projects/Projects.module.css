@@ -77,7 +77,7 @@
 
     .filter_by_type{
         
-        margin-left: 8%;
+        margin-left: 12%;
     }
 }
 
@@ -86,8 +86,15 @@
 @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
 
     .filter_by_type{
-        margin-left: 12%;
+        margin-left: 16%;
     }
+
+    @supports (-webkit-touch-callout: none) {
+        .filter_by_type{
+            margin-left: 14%;
+        }
+
+      }
 
 }
 
@@ -96,12 +103,12 @@
 @media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
 
     .container{
-        margin-left: 9%;
+        margin-left: 15%;
         margin-top: 2%;
     }
 
     .filter_by_type{
-        margin-right: 6%;
+        margin-right: 4%;
     }
 
 
@@ -113,7 +120,7 @@
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
     .filter_by_type{
-        margin-left: 13%;
+        margin-left: 15%;
         font-size: 1.2rem;
     }
 
@@ -144,9 +151,6 @@
 
 }
 
-/*super-massive */
-
-@media only screen and (min-width: 1600px) and (min-height: 768px) {}
 
 /*iPad pro landscape*/
 
@@ -163,3 +167,16 @@
     }
 
 }
+
+/*super-massive */
+@media only screen and (min-width: 1600px)  {
+
+        .container{
+            margin-left: 10%;
+        }      
+    
+        .filter_by_type{
+
+            margin-left: 7%;
+        }
+    }
