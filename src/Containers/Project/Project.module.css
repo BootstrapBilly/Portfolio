@@ -8,7 +8,17 @@
     padding-bottom: 17%;
     box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, 0.29);
     background-color: whitesmoke;
+    animation: fadeIn 3s;
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+  }
 
 .title {
     height: 15%;

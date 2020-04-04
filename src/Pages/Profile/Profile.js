@@ -7,6 +7,7 @@ import Nav from "../../Containers/Nav/Nav"
 
 //assets
 import image from "../../Assets/Img/me-croped-small.png"
+// eslint-disable-next-line
 import image_big from "../../Assets/Img/me-croped.png"
 
 const Profile = props => {
@@ -15,6 +16,7 @@ const Profile = props => {
         <div className={classes.container}>
 
             <div className={classes.top_section}>
+
 
                 <img className={classes.image} src={image} alt="A Navigation icon" />
                 <img className={classes.image_big} src={image} alt="A Navigation icon" />
