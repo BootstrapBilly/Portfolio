@@ -23,10 +23,10 @@
 
 .filter_by_type {
 
-    color: black;
+    color: #555355;
     font-weight: 900;
     padding: 2% 2%;
-    border: 2px solid black;
+    border: 2px solid #555355;
     text-align: center;
     font-size: 0.8rem;
 
@@ -143,11 +143,10 @@
 
     .filter_by_type:hover{
         cursor: pointer;
+        border-color: black;
+        color: black;
     }
 
-    .filter_by_type:hover{
-        transform: scale(1.02);
-    }
 
 }
 

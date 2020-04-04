@@ -3,6 +3,7 @@
     height: 15vh;
     border: 0.5px solid rgba(0, 0, 0, 0.336);
     margin: 2.5% 0;
+    margin-left: 5%;
     border-radius: 5%;
     box-shadow: 3px 3px 3px 3px rgba(49, 49, 49, 0.1);
     background-color: whitesmoke;
@@ -46,11 +47,11 @@
 
     .container{
         width: 25%;
-        height: 20%;
+        height: 24vh;
     }
 
     .icon{
-        height: 10vh;
+        height: 12vh;
     }
 
 }
@@ -67,7 +68,7 @@
 
     .container{
         width: 35%;
-        height: 20%;
+        height: 12vh
     }
 
     .icon{
@@ -79,6 +80,14 @@
 /*small tablet landscape*/
 @media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
 
+    .container{
+        width: 18%;
+        height: 20vh
+    }
+
+    .icon{
+        height: 10vh;
+    }
 
 }
 
@@ -89,11 +98,24 @@
         width: 25%;
     }
 
+
+
 }
 
 /*ipad landscape*/
 @media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
 
+    @supports (-webkit-touch-callout: none) {
+
+        .container{
+            width: 18%;
+            height: 15vh;
+        }
+        .icon{
+            height: 8vh;
+        }
+
+    }
     
 }
 
@@ -113,25 +135,22 @@
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
     .title{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+    }
+    .container{
+        width: 22vw;
     }
 
 }
 
-/*iPad pro landscape*/
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
- 
-    .title{
-        font-size: 1.5rem;
-    }
-}
+
 
 /*small laptop */
 @media only screen and (min-width: 1200px) {
 
     .container{
-        width:25%;
-        height: 20%;
+        width:12%;
+        height: 14vh;
     }
 
     .icon{
@@ -139,7 +158,7 @@
     }
 
     .title{
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
 }
@@ -147,6 +166,24 @@
 /*super-massive */
 @media only screen and (min-width: 1600px) and (min-height: 768px) {
 
-  
+  .container{
+      width: 9vw;
+      height: 12.5vh;
+  }
 
+}
+
+/*iPad pro landscape*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    @supports (-webkit-touch-callout: none) {
+
+        .title{
+            font-size: 1.3rem;
+        }
+        .container{
+            width: 16vw;
+            height: 15vh;
+        }
+    }
 }
