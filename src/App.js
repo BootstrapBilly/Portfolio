@@ -11,6 +11,7 @@ import Education from "./Pages/Education/Education"
 import Profile from "./Pages/Profile/Profile"
 import Skills from "./Pages/Skills/Skills"
 
+
 const App = () => {
 
   return (

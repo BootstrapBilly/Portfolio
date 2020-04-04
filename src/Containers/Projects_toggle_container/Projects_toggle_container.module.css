@@ -201,6 +201,7 @@
         .apply_button:hover{
             border-color: black;
             color: black;
+            cursor: pointer;
         }
      
     }

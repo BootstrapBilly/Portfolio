@@ -1,496 +1,99 @@
 .container {
-    padding: 0 4vw;
-    overflow-y: scroll;
-    padding-bottom: 10vh;
-    margin-left: 3vw;
-}
-
-.subject {
-    font-size: 1.2rem;
-    color: #1273EB;
-    margin-bottom: 0;
-}
-
-.school_name {
-    font-size: 1.05rem;
-}
-
-.description {
-    font-size: 1rem;
-}
-
-.description_point {
-    margin: 0;
-    font-size: 0.9rem;
-    color: rgb(80, 79, 79);
-    margin-left: 1vw
-}
-
-.description_grade {
-    font-size: 0.8rem;
-}
-
-.college {
-    margin-top: 2vh;
-}
-
-.subject_college {
-    color: rgb(81, 151, 79);
-}
-
-.subject_school {
-    color: rgb(224, 82, 82);
-}
-
-.degree_description {
-    display: none;
-}
-
-.footer_image_wrapper {
-    display: none;
-}
-
-/* long portrait phone*/
-
-@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
-    
-    .subject {
-        font-size: 1.25rem;
-    }
-    .school_name {
-        font-size: 1.2rem;
-    }
-    .description {
-        font-size: 1.1rem;
-    }
-    .description_point {
-        margin: 0;
-        font-size: 1rem;
-        color: rgb(80, 79, 79);
-        margin-left: 1vw
-    }
-    .college {
-        margin-top: 2vh;
-    }
-    .degree_description {
-        display: none;
-    }
-    .description_grade {
-        font-size: 0.95rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
 }
 
 /* landscape phone*/
+@media (orientation: landscape){
 
-@media (orientation: landscape) {
-    .title {
-        font-size: 1.4rem;
-        margin-left: 48%;
-        margin-bottom: 4px;
-        margin-top: 8px;
+    .container{
+        height: 90%;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
-    .container {
-        margin-left: 14%;
-        display: flex;
-        margin-top: 3vh;
-    }
-    .subject {
-        font-size: 0.95rem;
-    }
-    .school_name {
-        font-size: 0.9rem;
-    }
-    .description {
-        font-size: 0.8rem;
-    }
-    .description_point {
-        font-size: 0.75rem;
-    }
-    .description_grade {
-        font-size: 0.7rem;
-    }
-    .college {
-        margin-top: 0;
-        margin-left: 3vw;
-    }
-}
 
 
-/* long landscape phone*/
-@media only screen and (min-device-width: 600px) and (max-device-height: 500px) and (orientation: landscape) {
-    .title {
-        font-size: 1.4rem;
-        margin-left: 48%;
-        margin-bottom: 0;
-        margin-top: 8px;
-    }
-    .container {
-        margin-left: 14%;
-        display: flex;
-    }
-    .subject {
-        font-size: 0.95rem;
-    }
-    .school_name {
-        font-size: 0.9rem;
-    }
-    .description {
-        font-size: 0.9rem;
-    }
-    .description_point {
-        font-size: 0.85rem;
-    }
-    .description_grade {
-        font-size: 0.8rem;
-    }
-    .college {
-        margin-top: 0;
-        margin-left: 5vw;
-    }
-}
+    @supports (-webkit-touch-callout: none) {
 
-/*small tablet landscape*/
-@media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
-    .title {
-        font-size: 2.5rem;
-        margin-left: 42%;
-        margin-top: 5%;
-    }
-    .container {
-        margin-left: 15%;
-    }
-    .subject {
-        font-size: 1.5rem;
-    }
-    .school_name {
-        font-size: 1.4rem;
-    }
-    .description {
-        font-size: 1.3rem;
-    }
-    .description_point {
-        font-size: 1.3rem;
-    }
-    .description_grade {
-        font-size: 1.2rem;
-    }
-}
 
-/*! maybe useless - ipad portrait*/
+      }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .container {
-        margin-left: 25%;
-    }
-    .title {
-        margin-left: 29%;
-        margin-top: 20%;
-    }
-    .subject {
-        font-size: 1.7rem;
-    }
-    .school_name {
-        font-size: 1.45rem;
-    }
-    .description {
-        font-size: 1.35rem;
-    }
-    .description_point {
-        font-size: 1.25rem;
-    }
-    .college {
-        margin-top: 2vh;
-    }
-    .description_grade {
-        font-size: 1.25rem;
-    }
-}
-
-/*ipad landscape*/
-
-@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
-    .title {
-        font-size: 2.5rem;
-        margin-left: 42%;
-        margin-top: 5%;
-    }
-    .container {
-        margin-left: 12%;
-    }
-    .subject {
-        font-size: 1.5rem;
-    }
-    .school_name {
-        font-size: 1.4rem;
-    }
-    .description {
-        font-size: 1.3rem;
-    }
-    .description_point {
-        font-size: 1.3rem;
-    }
-    .description_grade {
-        font-size: 1.2rem;
-    }
-    .footer_image_wrapper {
-        display: flex;
-        height: 20%;
-        width: 100%;
-        position: fixed;
-        bottom: 2vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer_image {
-        width: 55%;
-    }
 }
 
 /*Other tablet portrait*/
-
 @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
-    .title {
-        font-size: 2.5rem;
-        margin-left: 22%;
-        margin-top: 10%;
-    }
-    .container {
-        margin-left: 18%;
-        margin-top: 5%;
-    }
-    .subject {
-        font-size: 1.5rem;
-    }
-    .school_name {
-        font-size: 1.4rem;
-    }
-    .description {
-        font-size: 1.3rem;
-    }
-    .description_point {
-        font-size: 1.3rem;
-    }
-    .description_grade {
-        font-size: 1.2rem;
-    }
-    .footer_image_wrapper {
-        display: flex;
-        height: 20%;
-        position: fixed;
-        bottom: 1vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer_image {
-        height: 99%;
-        width: 100%;
-    }
+   
+ .container{
+     width: 75%;
+     margin-left: 20%;
+     margin-top: 0%;
+ } 
 }
 
 /*Other tablet landscape*/
-
 @media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
-    .title {
-        font-size: 2.5rem;
-        margin-left: 42%;
+
+.container{
+    width: 85%;
+}
+
+}
+
+/*ipad landscape*/
+@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+
+    .container{
+        width: 95%;
         margin-top: 5%;
     }
-    .container {
-        margin-left: 15%;
-    }
-    .subject {
-        font-size: 1.5rem;
-    }
-    .school_name {
-        font-size: 1.4rem;
-    }
-    .description {
-        font-size: 1.2rem;
-    }
-    .description_point {
-        font-size: 1.18rem;
-    }
-    .description_grade {
-        font-size: 1rem;
-    }
+
+
 }
 
 /*iPad pro portrait*/
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .container {
-        margin-left: 17%;
-        margin-top: 5%;
-    }
-    .title {
-        font-size: 3.1rem;
-        margin-left: 21%;
-        margin-top: 10%;
-    }
-    .subject {
-        font-size: 2.2rem;
-    }
-    .school_name {
-        font-size: 1.9rem;
-    }
-    .description {
-        font-size: 1.85rem;
-    }
-    .description_point {
-        font-size: 1.85rem;
-    }
-    .college {
-        margin-top: 5vh;
-    }
-    .footer_image_wrapper {
-        display: flex;
-        height: 30%;
-        width: 100%;
-        position: fixed;
-        bottom: 0vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer_image {
-        width: 85%;
-    }
-}
 
-/*iPad pro landscape*/
+    .container{
+        width: 75%;
+        margin-left: 20%;
+        margin-top: 0%;
+    } 
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .container {
-        margin-left: 10%;
-    }
-    .title {
-        font-size: 3.1rem;
-        margin-left: 14%;
-    }
-    .subject {
-        font-size: 2rem;
-    }
-    .school_name {
-        font-size: 1.9rem;
-    }
-    .description {
-        font-size: 1.85rem;
-    }
-    .description_point {
-        font-size: 1.85rem;
-    }
-    .description_grade {
-        font-size: 1.45rem;
-    }
-    .footer_image_wrapper {
-        display: flex;
-        height: 30%;
-        width: 100%;
-        position: fixed;
-        bottom: 0vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer_image {
-        width: 55%;
-    }
 }
 
 /*small laptop */
+@media only screen and (min-width: 1200px)  {
 
-@media only screen and (min-width: 1200px){
-    body{
-        overflow: hidden;
+    .container{
+        width: 85%;
+        margin-top: 7%;
+        height: 65%;
     }
-    .container {
-        margin-left: 8%;
-        justify-content: space-evenly;
-        margin-top: 10vh;
-        overflow: hidden;
-    }
-    .subject {
-        font-size: 1.7rem;
-    }
-    .school_name {
-        font-size: 1.6rem;
-    }
-    .description {
-        font-size: 1.45rem;
-    }
-    .description_point {
-        font-size: 1.35rem;
-    }
-    .description_grade {
-        font-size: 1.25rem;
-    }
-    .footer_image_wrapper {
-        display: flex;
-        height: 30%;
-        width: 100%;
-        position: fixed;
-        bottom: 0vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer_image {
-        height: 75%;
-    }
-    .college {
-        margin-left: 5vw;
-    }
-    .school {
-        margin-top: 7vh;
+
+}
+
+/*iPad pro landscape*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .container{
+        width: 95%;
+        margin-top: 5%;
+        height: 70%;
     }
 }
 
 /*super-massive */
+@media only screen and (min-width: 1600px)  {
 
-@media only screen and (min-width: 1600px) and (min-height: 768px) {
+    .container{
+        width: 70%;
+        margin-top: 7%;
+        height: 65%;
+        margin-left: 8%;
+    }
 
-    .container {
-        margin-left: 17%;
-        margin-right: 17%;
-        justify-content: space-around;
-        overflow: hidden;
-    }
-    .title_container {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .title {
-        font-size: 2.5rem;
-        margin-bottom: 3vh;
-        margin-top: 4vh;
-    }
-    .subject {
-        font-size: 1.7rem;
-    }
-    .school_name {
-        font-size: 1.6rem;
-    }
-    .description {
-        font-size: 1.45rem;
-    }
-    .description_point {
-        font-size: 1.35rem;
-    }
-    .description_grade {
-        font-size: 1.25rem;
-    }
-    .footer_image_wrapper {
-        display: flex;
-        height: 30%;
-        width: 100%;
-        position: fixed;
-        bottom: 0vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer_image {
-        height: 75%;
-    }
-    .college {
-        margin-left: 5vw;
-    }
 }
+

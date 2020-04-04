@@ -1,0 +1,500 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.year_container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 2px solid #555355;
+    align-items: flex-start;
+}
+
+.year {
+    margin-right: 1vw;
+    color: black;
+}
+
+.inner_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education_block {
+    margin-right: 3%;
+    width: 85%;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, 0.29);
+}
+
+.education_header_container{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    color:black;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.school_name{
+
+    font-size: 0.9rem;
+    color: #3b3b3b;
+
+}
+
+.school_container {
+    height: 35.5%;
+    -webkit-animation: slideIn 1s ;
+    animation: slideIn 1s;
+    position: relative;
+
+}
+
+@keyframes slideIn {
+    0% {
+      left: 300px;
+    }
+    100% {
+        left:0
+    }
+  }
+  
+.gcse_body_container{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.uni_body_container{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    justify-content: center;
+}
+
+.uni_grade{
+
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 2%;
+    height: 10%;
+}
+
+.gcse_column{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    margin-left: 5%;
+    
+}
+
+.gcse, .module{
+    font-size: 0.8rem;
+    color: #687B8D
+}
+
+.college_container {
+    height: 14.75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: slideIn 2s ;
+    animation: slideIn 2s;
+    position: relative;
+}
+
+.uni_container {
+    height: 41.75%;
+    -webkit-animation: slideIn 2.5s ;
+    animation: slideIn 2.5s;
+    position: relative;
+}
+
+.landscape_year_container_left, .landscape_year_container_right, .landscape_inner_container_left, .landscape_inner_container_right{
+    display: none;
+}
+
+
+/* long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
+    
+
+
+   
+}
+
+/* very long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 800px) and (orientation: portrait) {
+    
+    .education_header_container{
+
+        font-size: 1.2em;
+    }
+
+    .school_name{
+        font-size: 1.1rem;
+    }
+
+    .gcse, .module, .uni_grade{
+        
+        font-size: 0.95rem;
+    }
+
+    .education_body_container, .uni_body_container{
+       height: 100%;
+    }
+
+
+}
+
+/* landscape phone*/
+@media (orientation: landscape){
+
+    .year_container{
+        display: none;
+    }
+
+    .inner_container {
+        display: none;
+    }
+
+    .container{
+        width: 90%;
+        height: 85%;
+        margin-left: 17%;
+    }
+
+    .year_container{
+        height: unset;
+    }
+
+    .landscape_year_container_left, .landscape_year_container_right{
+        display: block;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        border-right: 2px solid #555355;
+        align-items: flex-start;
+    }
+
+    .landscape_year_container_right{
+
+        height: 77.7777778%;        
+    }
+
+    .landscape_inner_container_left, .landscape_inner_container_right {
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .landscape_inner_container_right{
+        
+        height: 77.7777778%;
+    }
+
+    .school_container {
+        height: 54.66666666666666%;
+        width: 90%;
+        margin-top: 5%;
+        padding-top: 3%;
+    }
+
+    .college_container{
+
+        height: 23.333333333333333%;
+        width: 90%;
+        margin-bottom: 4%;
+    }
+
+    .uni_container{
+        margin-top: 5%;
+        height: 90%;
+        width: 90%;
+    }
+
+    .education_header_container{
+        font-size: 0.9rem;
+    }
+
+    .school_name{
+        font-size: 0.8rem;
+    }
+
+    .module, .gcse{
+
+        font-size: 0.7rem;
+    }
+    .uni_grade{
+        font-size: 0.65rem;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+
+
+      }
+
+}
+
+
+
+
+/*small tablet portrait*/
+@media (min-device-height: 800px) and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+
+
+
+}
+    
+/*small tablet landscape*/
+@media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+
+}
+
+/*! maybe useless - ipad portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    
+
+
+}
+
+/*ipad landscape*/
+@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+
+    .container{
+        margin-left: 15%;
+        height: 70%;
+    }
+   
+  .education_header_container{
+      font-size: 1.2rem;
+  }
+
+  .school_name{
+      font-size: 1.1rem;
+  }
+
+  .module, .gcse{
+
+    font-size: 1rem;
+  }
+
+  .uni_grade{
+      font-size: 1rem;
+      text-align: center;
+  }
+
+}
+
+/*Other tablet portrait*/
+@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
+
+    .container{
+        height: 80%;
+    }
+   
+  .education_header_container{
+      font-size: 1.2rem;
+  }
+
+  .school_name{
+      font-size: 1.1rem;
+  }
+
+  .module, .gcse{
+
+    font-size: 1rem;
+  }
+
+  .uni_grade{
+      font-size: 1rem;
+      text-align: center;
+  }
+}
+
+/*Other tablet landscape*/
+@media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+
+    .container{
+        margin-left: 15%;
+    }
+   
+  .education_header_container{
+      font-size: 1.2rem;
+  }
+
+  .school_name{
+      font-size: 1.1rem;
+  }
+
+  .module, .gcse{
+
+    font-size: 1rem;
+  }
+
+  .uni_grade{
+      font-size: 1rem;
+      text-align: center;
+  }
+}
+
+/*iPad pro portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+
+    .container{
+        height: 80%;
+    }
+   
+  .education_header_container{
+      font-size: 1.4rem;
+  }
+
+  .school_name{
+      font-size: 1.3rem;
+  }
+
+  .module, .gcse{
+
+    font-size: 1.2rem;
+  }
+
+  .uni_grade{
+      font-size: 1.2rem;
+      text-align: center;
+  }
+
+  .year{
+      font-size: 1.2rem;
+  }
+
+}
+
+
+
+/*small laptop */
+@media only screen and (min-width: 1200px)  {
+
+    .education_header_container{
+        font-size: 1.2rem;
+    }
+  
+    .school_name{
+        font-size: 1.1rem;
+    }
+  
+    .module, .gcse{
+  
+      font-size: 1rem;
+    }
+  
+    .uni_grade{
+        font-size: 1rem;
+        text-align: center;
+    }
+  
+    .year{
+        font-size: 1rem;
+    }
+
+    .module{
+        margin-left: 5%;
+    }
+
+    .school_container, .uni_container {
+        padding-top: 5%;
+    }
+
+    .school_container{
+        height: 50%;
+    }
+
+    .uni_container {
+
+        height: 82%;
+    }
+
+
+}
+
+
+  
+/*super-massive */
+@media only screen and (min-width: 1600px)  {
+
+    .education_header_container{
+        font-size: 1.4rem;
+    }
+    .module{
+        margin-left: 10%;
+    }
+
+
+}
+
+/*iPad pro landscape*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+   
+  .education_header_container{
+      font-size: 1.4rem;
+  }
+
+  .school_name{
+      font-size: 1.3rem;
+  }
+
+  .module, .gcse{
+
+    font-size: 1.2rem;
+  }
+
+  .uni_grade{
+      font-size: 1.2rem;
+      text-align: center;
+  }
+
+  .year{
+      font-size: 1.2rem;
+  }
+}

@@ -8,17 +8,9 @@
     padding-bottom: 17%;
     box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, 0.29);
     background-color: whitesmoke;
-    animation: fadeIn 3s;
 }
 
-@keyframes fadeIn {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
-  }
+
 
 .title {
     height: 15%;
@@ -42,7 +34,7 @@
 
 @media only screen and (max-device-width: 500px) and (min-device-height: 800px) and (orientation: portrait) {
     .container {
-        height: 52vh;
+        height: 49vh;
     }
 }
 
@@ -169,11 +161,22 @@
     .container {
         height: 50vh;
         width: 25.5vw;
+        animation: fadeIn 3s;
     }
     .title {
         margin-top: 0;
     }
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+       
+    }
+  }
 
 
 /*iPad pro landscape*/
