@@ -42,7 +42,7 @@ const Skills = props => {
             skillcard_info={
 
                 [
-                    {title:"JavaScript", color:"#FFB229", icon_name:javascript},
+                    {title:"JavaScript", color:"orange", icon_name:javascript},
                     {title:"React.js", color:"#5ED9FC", icon_name:react},
                     {title:"CSS/Flexbox", color:"#006BC0", icon_name:css},
                 ]

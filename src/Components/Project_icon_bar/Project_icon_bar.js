@@ -19,9 +19,9 @@ const Project_icon_bar = props => {
 
             <div className={classes.icon_container}>
 
-                <img className={classes.icon} src={props.active_section === "gallery" ? notes : gallery} alt="A notes icon"
-                    onClick={props.active_section === "gallery" ? props.change_active_section.bind(this, "notes") : props.change_active_section.bind(this, "gallery")} />
-                <span className={classes.icon_text}>{props.active_section === "gallery" ? "NOTES" : "GALLERY"}</span>
+                <img className={classes.icon} src={gallery} alt="A notes icon"
+    />
+                <span className={classes.icon_text}>GALLERY</span>
 
             </div>
 
@@ -31,15 +31,6 @@ const Project_icon_bar = props => {
                 <span className={classes.icon_text}>GITHUB</span>
 
             </div>
-
-            <div className={classes.icon_container}>
-
-                <img className={classes.icon} src={livesite} alt="A Notes icon" onClick={props.handleClickLive} />
-                <span className={classes.icon_text}>WEBSITE</span>
-
-            </div>
-
-
 
 
         </div>
