@@ -9,12 +9,20 @@ import IconBar from "../../Components/Project_icon_bar/Project_icon_bar"
 const Project = props => {
 
     const [detail_open, set_detail_open] = useState(false)
+    let hoverTimer;
 
     return (
 
         <div className={classes.container}
-        onMouseOver={() => !detail_open ? set_detail_open(true) : null}
-        onMouseLeave={() => set_detail_open(false)}
+        onMouseEnter={() => {
+            hoverTimer = setTimeout(()=> {
+                hoverTimer = set_detail_open(true)
+            }, 300)
+        }}
+        onMouseLeave={() => {
+            clearTimeout(hoverTimer)
+            set_detail_open(false)
+        }}
         style={{display:props.visible}}
 
         >
