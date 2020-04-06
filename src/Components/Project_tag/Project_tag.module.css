@@ -1,0 +1,88 @@
+.text{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    padding: 0px 4px;
+    margin-left: 3%;
+    font-size: 0.9rem;
+    animation: slideIn 2s;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes slideIn {
+    0% {
+        left: 110vw;
+    }
+    100% {
+        left: 0
+    }
+}
+
+/* landscape phone*/
+@media (orientation: landscape) {
+
+
+    .text{
+        font-size: 0.8rem;
+        height: 5.5vh;
+    }
+
+}
+
+/*small tablet landscape*/
+@media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+    .text{
+        font-size: 0.9rem;
+    }
+
+}
+
+/*ipad landscape*/
+@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+    @supports (-webkit-touch-callout: none) {
+
+        .text{
+            height: 4vh;
+        }
+    }
+    
+}
+
+/*iPad pro portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    .text{
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+   }
+
+   /*small laptop */
+
+@media only screen and (min-width: 1200px){
+
+        
+    .text{
+        height: 2.5vh;
+        font-size: 0.8rem;
+    }
+
+
+}
+
+   /*iPad pro landscape*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    @supports (-webkit-touch-callout: none) {
+
+        .text{
+            height: 3vh;
+            font-size: 1.2rem;
+        }
+    }
+}

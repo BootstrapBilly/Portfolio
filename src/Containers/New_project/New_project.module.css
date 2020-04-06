@@ -1,0 +1,300 @@
+.container {
+    width: 90vw;
+    height: 33vh;
+    margin-top: 5vh;
+    padding: 1%;
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail {
+    height: 100%;
+    width: 85vw;
+    object-fit: cover;
+}
+
+.detail_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    -webkit-animation: slideIn .6s;
+    animation: slideIn .6s;
+    position: relative;
+}
+
+@keyframes slideIn {
+    0% {
+        top: 110vh;
+    }
+    100% {
+        top: 0
+    }
+}
+
+.title {
+    font-size: 1.3rem;
+    margin-top: 1%;
+    margin-left: 4%;
+    height: 15%;
+    width: 100%;
+    text-align: start;
+}
+
+.description_container {
+    height: 85%;
+    width: 80%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.writeup_container {
+    height: 55%;
+    display: flex;
+    align-items: center;
+    color: #555355;
+    font-size: 0.9rem;
+    margin: 0 6%;
+    text-align: start;
+}
+
+.tag_container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    align-items: center;
+}
+
+.icon_container {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 85%;
+}
+
+/* long portrait phone*/
+@media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
+    
+
+}
+
+/* landscape phone*/
+@media (orientation: landscape) {
+
+
+    .container{
+        width: 43%;
+        height: 50vh;
+    }
+    .thumbnail{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+    .writeup_container{
+        font-size: 0.75rem;
+    }
+
+}
+
+
+/* long landscape phone*/
+@media only screen and (min-device-width: 600px) and (max-device-height: 500px) and (orientation: landscape) {
+
+
+}
+
+/*small tablet portrait*/
+@media (min-device-height: 800px) and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .container{
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    .thumbnail{
+        width: 100%;
+    }
+
+    .title{font-size: 1.7rem;}
+
+    .writeup_container{
+        font-size: 1.2rem;
+    }
+}
+
+/*small tablet landscape*/
+@media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+    .title{font-size: 1.5rem;}
+
+    .writeup_container{
+        font-size: 1.1rem;
+    }
+
+    .thumbnail{
+        object-fit: cover;
+    }
+    
+
+}
+
+/*! maybe useless - ipad portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    @supports (-webkit-touch-callout: none) {
+
+        .container{
+            height: 27vh;
+            width: 60%;
+        }
+
+            .title{
+                font-size: 1.7rem;
+            }
+
+            .writeup_container{
+                font-size: 1.3rem;
+            }
+
+    }
+
+
+}
+
+/*ipad landscape*/
+@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+    @supports (-webkit-touch-callout: none) {
+
+
+        .container{
+            height: 30vh;
+        }
+
+        .title{
+            font-size: 1.5rem;
+        }
+
+        .writeup_container{
+            font-size: 1.1rem;
+        }
+    }
+    
+}
+
+/*Other tablet portrait*/
+@media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
+   
+
+}
+
+/*Other tablet landscape*/
+@media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+    .title{font-size: 1.55rem;}
+    .writeup_container{
+        font-size: 1.25rem;
+    }
+
+}
+
+/*iPad pro portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .writeup_container{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+/*small laptop */
+@media only screen and (min-width: 1200px) {
+
+    .container{
+        width: 25%;
+        height: 30vh;
+        margin: 0%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .thumbnail{
+        animation: fadeIn 4s;
+    }
+
+    .container:hover{
+        cursor: pointer;
+    }
+
+    .detail_container{
+
+        width: 90%;
+        height: 80%;
+
+    }
+
+    .title{
+        font-size: 1.05rem;
+    }
+
+    .writeup_container{
+        font-size: 0.8rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0%;
+    }
+       
+    100% {
+        opacity: 100%;
+       
+    }
+  }
+
+
+/*super-massive */
+@media only screen and (min-width: 1600px) and (min-height: 768px) {
+
+.title{
+    font-size: 1.2rem;
+}
+}
+
+/*iPad pro landscape*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    @supports (-webkit-touch-callout: none) {
+
+        .container{
+            height: 29vh;
+        }
+
+    }
+}

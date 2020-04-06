@@ -114,7 +114,7 @@
         flex-direction: column;
         top:20%;
         left:1%;
-        border: 2px solid #555355;
+        border: none;
     }
 
 }
@@ -139,6 +139,7 @@
      width: 4%;
      height: 40%;
      top: 25%;
+     left: 2.5%;
  }
   
 
