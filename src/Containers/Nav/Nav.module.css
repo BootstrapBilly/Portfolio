@@ -8,7 +8,6 @@
     position: fixed;
     bottom: 0vh;
     z-index: 999;
-    border-top:0.5px solid #737073;
     background-color: #DDDDDD;
     
 }
@@ -23,7 +22,6 @@
         top: 0;
         left: 0;
         border: none;
-        border-right:0.5px solid #737073;
 
     }
 
@@ -39,7 +37,6 @@
         flex-direction: column;
         top:7%;
         left:2%;
-        border: 1px solid #555355;
 
     }
 
@@ -56,7 +53,6 @@
         flex-direction: column;
         top:18%;
         left:2%;
-        border: 1px solid #555355;
     }
 
 }
@@ -71,7 +67,6 @@
         flex-direction: column;
         top:20%;
         left:2%;
-        border: 1px solid #555355;
     }
 }
 
@@ -86,7 +81,6 @@
         flex-direction: column;
         top:20%;
         left:2%;
-        border: 1px solid #555355;
     }
 
 }
@@ -101,7 +95,6 @@
         flex-direction: column;
         top:13%;
         left:3%;
-        border: 1px solid #555355;
     }
 }
 

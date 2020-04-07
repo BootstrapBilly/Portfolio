@@ -8,7 +8,7 @@ import SimpleReactLightbox from "simple-react-lightbox";
 //Components
 import Projects from "./Pages/Projects/Projects"
 import Education from "./Pages/Education/Education"
-import Profile from "./Pages/Profile/Profile"
+import About from "./Pages/About/About"
 import Skills from "./Pages/Skills/Skills"
 
 
@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/" exact component={Projects} />
           <Route path="/technologies" exact component={Skills} />
           <Route path="/education" exact component={Education} />
-          <Route path="/about-me" exact component={Profile} />
+          <Route path="/about-me" exact component={About} />
 
         </Switch>
 

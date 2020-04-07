@@ -176,6 +176,28 @@
        height: 100%;
     }
 
+    
+    @supports (-webkit-touch-callout: none) {
+
+        .container{
+            height: 80%;
+        }
+
+        .education_header_container{
+
+            font-size: 1.1em;
+        }
+    
+        .school_name{
+            font-size: 1rem;
+        }
+
+        .gcse, .module, .uni_grade{
+        
+            font-size: 0.82rem;
+        }
+
+    }
 
 }
 

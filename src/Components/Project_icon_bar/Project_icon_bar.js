@@ -5,8 +5,6 @@ import React from "react"
 import classes from "./Project_icon_bar.module.css"
 
 import github from "../../Assets/Icons/github.svg"
-import livesite from "../../Assets/Icons/livesite.svg"
-import notes from "../../Assets/Icons/notes.svg"
 import gallery from "../../Assets/Icons/gallery.svg"
 
 const Project_icon_bar = props => {
@@ -19,7 +17,7 @@ const Project_icon_bar = props => {
 
             <div className={classes.icon_container}>
 
-                <img className={classes.icon} src={gallery} alt="A notes icon"
+                <img className={classes.icon} src={gallery} alt="A gallery icon"
     />
                 <span className={classes.icon_text}>GALLERY</span>
 
