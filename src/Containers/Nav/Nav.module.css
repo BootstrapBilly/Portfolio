@@ -49,10 +49,12 @@
     .nav {
 
         width: 10vw;
-        height: 60%;
+        height: 100%;
         flex-direction: column;
-        top:18%;
+        top:0;
         left:2%;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -62,11 +64,13 @@
 
 @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
     .nav {
-        width: 14vw;
-        height: 50%;
+        width: 14vw; 
         flex-direction: column;
-        top:20%;
         left:2%;
+        top:0%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -77,10 +81,12 @@
 
     .nav {
         width: 12vw;
-        height: 50%;
         flex-direction: column;
-        top:20%;
         left:2%;
+        top:0%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
 }
@@ -95,6 +101,10 @@
         flex-direction: column;
         top:13%;
         left:3%;
+        top:0%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -103,11 +113,13 @@
 
     .nav {
         width: 5.5%;
-        height: 50%;
+        height: 100%;
         flex-direction: column;
-        top:20%;
+        top:0%;
         left:1%;
         border: none;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -117,10 +129,12 @@
   
     .nav {
         width: 9%;
-        height: 55%;
+        height: 100%;
         flex-direction: column;
-        top:20%;
+        top:0%;
         left:1.5%;
+        justify-content: center;
+        align-items: center;
     }
 
 }

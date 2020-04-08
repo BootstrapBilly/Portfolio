@@ -381,6 +381,8 @@
 
     .container{
         margin-left: 15%;
+        height: 80%;
+        margin-top: 8%;
     }
    
   .education_header_container{
@@ -397,7 +399,7 @@
   }
 
   .uni_grade{
-      font-size: 1rem;
+      font-size: 1.3vw;
       text-align: center;
   }
 }

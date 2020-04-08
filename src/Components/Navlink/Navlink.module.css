@@ -51,8 +51,8 @@
 
 @media only screen and (min-device-height : 1024px) and (max-device-height : 1024px) and (orientation : landscape){
     .icon {
-        width: 8vh;
-        height: 8vh
+        width: 6.5vh;
+        height: 6.5vh
     }
     .link_text {
         margin-top:1vh;
@@ -64,8 +64,8 @@
 
 @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
     .icon {
-        width: 6.5vh;
-        height: 6.5vh
+        width: 5.5vh;
+        height: 5.5vh
     }
     .link_text {
         font-size: 0.7rem;
@@ -89,6 +89,11 @@
 
     .link_text {
         font-size: 0.9rem;
+    }
+
+    .icon {
+        width: 5vh;
+        height: 5vh
     }
 }
 

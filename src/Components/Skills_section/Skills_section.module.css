@@ -36,6 +36,7 @@
     .header {
         margin-top: 3%;
     }
+
     @supports (-webkit-touch-callout: none) {}
 }
 
@@ -58,7 +59,12 @@
 
 /*ipad landscape*/
 
-@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {}
+@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+    .header{
+        padding: 1% 1%;
+    }
+}
 
 /*Other tablet portrait*/
 
@@ -66,7 +72,10 @@
 
 /*Other tablet landscape*/
 
-@media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {}
+@media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
+
+
+}
 
 /*iPad pro portrait*/
 
@@ -81,6 +90,7 @@
 @media only screen and (min-width: 1200px) {
     .header {
         width: unset;
+        padding: 0.5% 1%;
     }
     .header {
         margin-bottom: 0;
@@ -118,6 +128,7 @@
     @supports (-webkit-touch-callout: none) {
         .header {
             font-size: 1.4rem;
+            padding: 1% 1%;
         }
     }
 }
