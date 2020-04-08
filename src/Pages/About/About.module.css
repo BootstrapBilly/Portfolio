@@ -1,258 +1,97 @@
-.container{
+.container {
+    margin: 5% 10%;
     display: flex;
+    height: 80%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 3% 5%;
     position: relative;
-    height: 100%;
 }
 
-.photo_container{
-
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: slideDown 2s;
-    animation-delay: 15.5s;
-    animation-fill-mode: forwards;
-    position: absolute;
-    top: -500px;
-}
-
-@keyframes slideDown {
-
-    0%{
-        top: -500px;
-    }
-    100%{
-        top: 0;
-    }
-}
-
-.image {
-    
-    height: 20vh;
-    width: 20vh;
-
-}
-
-.text_container{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #1d1d1d;
-    position: absolute;
-    animation: textSlideDown 2s forwards;
-    animation-delay: 15.5s;
-    top: 0vh;
-    left: 0vh;
-    margin: 0 4.5%;
-}
-
-@keyframes textSlideDown {
-
-    0%{
-        top: 0vh;
-    }
-    100%{
-        top: 26vh;
-    }
-}
-
-.text{
-
-    font-size: 1rem;
-    margin-bottom: 5%; 
-
-}
-
-.light_text{
-
-    color: #555355;
-}
-
-.email_container{
-
-    width: 100%;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: slideUp 2s;
-    animation-delay: 14.5s;
-    animation-fill-mode: forwards;
-    position: absolute;
-    bottom: -500px;
-
-}
-
-@keyframes slideUp {
-
-    0%{
-        bottom: -500px;
-    }
-    100%{
-        bottom: 18vh
-    }
-
-}
-
-.icon{
-    height: 12vw;
-    width: 12vw;
-    margin-right: 2vw;
-}
-
-.email{
+.text, .email {
     font-size: 1.1rem;
-    text-align: center;
-    color:#555355;
-    font-weight: bold;
 }
 
-/*iphones*/
+.light_text, .email {
+    color: #555355
+}
+
+.email_container {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -100vw;
+    animation: slideIn 1s forwards;
+    animation-delay: 17s;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -100vw;
+    }
+    90% {
+        left: 10vw;
+    }
+    100% {
+        left: 0vw;
+    }
+}
+
+.icon {
+    width: 6vh;
+    height: 6vh;
+    margin-right: 3vw;
+}
+
 @supports (-webkit-touch-callout: none) {
-
-    .text{
-        font-size: 1rem;
+    .text, .email {
+        font-size: 1.2rem;
     }
+}
 
-    @keyframes slideUp {
+/* long portrait phone*/
 
-        0%{
-            bottom: -500px;
-        }
-        100%{
-            bottom: 17vh
-        }
-    
-    }
-
-    @keyframes textSlideDown {
-
-        0%{
-            top: 0vh;
-        }
-        100%{
-            top: 24vh;
-        }
-    }
-
-  }
-
-  /* long portrait phone*/
 @media only screen and (max-device-width: 500px) and (min-device-height: 700px) and (orientation: portrait) {
-
-    .text{
-        font-size: 1.1rem;
+    .container {
+        height: 70%;
+        margin-top: 15%;
     }
-
-    @keyframes textSlideDown {
-
-        0%{
-            top: 0vh;
-        }
-        100%{
-            top: 24vh;
-        }
-    }
-
-    .image{
-        width: 18vh;
-        height: 18vh;
-    }
-
-    
-    @supports (-webkit-touch-callout: none) {
-
-        .text{
-            font-size: 1rem;
-        }
-
-        @keyframes textSlideDown {
-
-            100%{
-                top: 24vh;
-            }
-        }
-
-    }
-
 }
 
 /* very long portrait phone*/
+
 @media only screen and (max-device-width: 500px) and (min-device-height: 800px) and (orientation: portrait) {
-    
-    .text{
-        font-size: 1.2rem;
+    .container {
+        height: 60%;
+        margin-top: 20%;
     }
-
-    @keyframes textSlideDown {
-
-        0%{
-            top: 0vh;
-        }
-        100%{
-            top: 26vh;
-        }
-    }
-
-    .image{
-        width: 18vh;
-        height: 18vh;
-    }
-
-    @supports (-webkit-touch-callout: none) {
-
-        .text{
-            font-size: 1.25rem;
-        }
-
-        @keyframes textSlideDown {
-
-            100%{
-                top: 22vh;
-            }
-        }
-
-        .email{
-            font-size: 1.25rem;
-        }
-
-    }
-
 }
 
 /* landscape phone*/
-@media (orientation: landscape){
 
+@media (orientation: landscape) {
 
     .container{
-        width: 50%;
-        margin-left: 30%;
+
+        height: 90%;
+        margin-top: 1%;
+
     }
 
-    .text{
-        font-size: 3.5vh;
+    .email_container, .text{
+        margin: 0 20vw;
     }
 
-    .image {
-        height: 25vh;
-        width: 25vh;
+    .text, .email{
+        font-size: 0.9rem;
     }
-
-    .text_container{
-        margin: 0 6vw;
-    }
-    @keyframes textSlideDown {
-
-        100%{
-            top: 26vh;
+   
+    @supports (-webkit-touch-callout: none) {
+        .text, .email {
+            font-size: 1rem;
         }
     }
 
@@ -260,112 +99,154 @@
         height: 12vh;
         width: 12vh;
     }
+}
 
-    .email{
-        font-size: 3.5vh;
-    }
+/* long landscape phone*/
 
-    @keyframes slideUp {
-
-        100%{
-            bottom: 23vh
-        }
-    
-    }
-
-    @supports (-webkit-touch-callout: none) {
-
-
-      }
+@media only screen and (min-device-width: 600px) and (max-device-height: 500px) and (orientation: landscape) {
 
 }
+
+/*small tablet landscape*/
+
+@media (min-device-width: 800px) and (min-device-height: 600px) and (max-device-height: 1024px) and (orientation: landscape) {}
+
+/*! maybe useless - ipad portrait*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
+
+/*ipad landscape*/
+
+@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+
+    .container{
+        height: 50%;
+        margin-top: 12%;
+    }
+
+    .icon{
+        height: 6vh;
+        width: 6vh;
+        margin-right: 1.5vw;
+    }
+
+}
+
+/*Other tablet portrait*/
 
 @media (min-device-height: 900px) and (max-device-height: 1280px) and (orientation: portrait) {
 
     .container{
-        width: 60%;
-        margin-left: 25%;
-        height: 78vh;
-        margin-top: 10%;
+        width: 55%;
+        margin-left: 28%;
+        height: 45%;
+        margin-top: 25%;
     }
 
-    .image{
-        height: 15vh;
-        width: 15vh;
+    .text, .email{
+        font-size: 2vh;
     }
 
-    .text_container{
-        margin: 0 8vw;
-    }
-
-    @keyframes textSlideDown {
-
-        100%{
-            top: 22vh;
-        }
-    }
-
-    .text{
-        font-size: 1.25rem;
+    .icon{
+        margin-right: 1.5vw;
     }
 }
 
 /*Other tablet landscape*/
+
 @media (min-device-width: 900px) and (max-device-width: 1280px) and (orientation: landscape) {
 
-    .image{
-        height: 22vh;
-        width: 22vh;
-    }
-    .text{
-        font-size: 3vh;
-    }
+    .container{
+        height: 75%;
+        margin-top: 5%;
 
-    .text_container{
-        margin: 0 8vw;
+    }
+    .text, .email{
+        font-size: 1.2rem;
     }
 
-    @keyframes slideUp {
+    .icon{
+        height: 8vh;
+        width: 8vh;
+        margin-right: 1vw;
+    }
+}
 
-        100%{
-            bottom: 15vh
-        }
-    
+/*iPad pro portrait*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    .container{
+        width: 40%;
+        height: 35%;
+        margin-left: 31%;
+        margin-top: 30%;
+    }
+    .text, .email{
+        font-size: 1.4rem;
     }
 
-    @keyframes textSlideDown {
+    .icon{
+        height: 5vh;
+        width: 5vh;
+        margin-right: 1vw;
+    }
+}
 
-        100%{
-            top: 24vh;
-        }
+
+
+/*small laptop */
+
+@media only screen and (min-width: 1200px) {
+
+    .container{
+        height: 55%;
+        width: 65%;
+        margin-top: 10%;
+        margin-left: 18%;
+    }
+
+    .icon{
+        height: 4vh;
+        width: 4vh;
+        margin-right: 1vw;
+
+    }
+
+    .text, .email{
+        font-size: 1.2rem;
     }
 
 }
 
-/*ipad landscape*/
-@media only screen and (min-device-height: 1024px) and (max-device-height: 1024px) and (orientation: landscape) {
+/*super-massive */
 
+@media only screen and (min-width: 1600px){
 
-    .image{
-        height: 18vh;
-        width: 18vh;
+    .container{
+        height: 45%;
+        width: 60%;
+    }
+}
+
+/*iPad pro landscape*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .container{
+        height: 50%;
+        width: 70%;
+        margin-top: 15%;
+        margin-left: 16%;
+       
     }
 
     .text, .email{
-        font-size: 2.7vh;
+        font-size: 1.4rem;
     }
 
     .icon{
-        height: 9vh;
-        width: 9vh;
+        height: 5vh;
+        width: 5vh;
     }
-
-    @keyframes textSlideDown {
-
-        100%{
-            top: 23vh;
-        }
-    }
-
-
 }

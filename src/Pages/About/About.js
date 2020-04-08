@@ -9,21 +9,12 @@ import Nav from "../../Containers/Nav/Nav"
 
 //assets
 import email from "../../Assets/Icons/email.svg"
-import image from "../../Assets/Img/me-croped-small.png"
 
 const About = props => {
 
     return (
 
         <div className={classes.container}>
-
-            <div className={classes.photo_container}>
-
-            <img className={classes.image} src={image} alt="A Navigation icon" />
-
-</div>
-
-            <div className={classes.text_container}>
 
                 <Typed className={classes.text}
                     strings={[`Billy is a full-stack JavaScript developer from Chelmsford, Essex.`]}
@@ -46,14 +37,13 @@ const About = props => {
                     showCursor={false}
                 />
 
-            </div>
+                <div className={classes.email_container}>
 
-            <div className={classes.email_container}>
+                    <img className={classes.icon} src={email} alt="A Navigation icon" />
+                    <span className={classes.email}>Billyjcatchpole@gmail.com</span>
 
-            <img className={classes.icon} src={email} alt="A Navigation icon"/>
-            <span className={classes.email}>Billyjcatchpole@gmail.com</span>
+                </div>
 
-</div>
 
             <Nav path={props.location.pathname} />
 
