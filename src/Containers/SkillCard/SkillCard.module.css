@@ -1,8 +1,10 @@
 .container{
-    width:26%;
-    height: 15vh;
+    width:28%;
     margin: 2.5% 0;
     margin-left: 5%;
+    height: 15vh;
+
+
 }
 
 .title_container{
@@ -12,6 +14,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 1vh;
+
 
 }
 .title{
@@ -26,6 +29,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 2vh;
+ 
 }
 
 .icon{
@@ -146,7 +150,7 @@
 @media only screen and (min-width: 1200px) {
 
     .container{
-        width:5%;
+        width:8%;
         height: 14vh;
     }
 
@@ -165,7 +169,7 @@
 @media only screen and (min-width: 1600px) and (min-height: 768px) {
 
   .container{
-      width: 2%;
+      width: 6%;
       height: 12.5vh;
   }
 

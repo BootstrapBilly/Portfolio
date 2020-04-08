@@ -15,7 +15,7 @@ const Project_icon_bar = props => {
 
         <div className={classes.footer_container}>
 
-            <div className={classes.icon_container}>
+            <div className={classes.icon_container} style={{visibility:props.noGallery ? "hidden" : "visible"}}>
 
                 <img className={classes.icon} src={gallery} alt="A gallery icon"
     />

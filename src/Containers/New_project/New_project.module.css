@@ -12,7 +12,7 @@
 .thumbnail {
     height: 100%;
     width: 85vw;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .detail_container {
@@ -242,12 +242,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-
     }
 
     .thumbnail{
         animation: fadeIn 4s;
+        object-fit: fill;
     }
 
     .container:hover{

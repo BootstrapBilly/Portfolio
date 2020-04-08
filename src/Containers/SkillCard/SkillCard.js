@@ -10,7 +10,7 @@ const SkillCard = props => {
 
     return (
 
-        <div className={classes.container}>
+        <div className={classes.container} >
 
             <div className={classes.title_container}>
 

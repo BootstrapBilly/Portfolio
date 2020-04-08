@@ -23,7 +23,7 @@ const SkillsSection = props => {
 
                     {props.skillcard_info.map(item => {
 
-                        return <SkillCard title={item.title} color={item.color} icon_name={item.icon_name} />
+                        return <SkillCard title={item.title} color={item.color} icon_name={item.icon_name}/>
 
                     })}
 

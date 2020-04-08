@@ -56,7 +56,7 @@ const Project = props => {
 
                     <div className={classes.icon_container}>
 
-                        <IconBar />
+                        <IconBar noGallery={props.noGallery}/>
 
                     </div>
 

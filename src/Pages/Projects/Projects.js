@@ -31,7 +31,7 @@ const Projects = props => {
     return (
 
         <React.Fragment>
-            
+
             <ToggleContainer
 
                 filters_open={filters_open}
@@ -86,45 +86,17 @@ const Projects = props => {
 
                 <Project
 
-                    visible={check_active_filters("Full-stack")}
-
-                    thumbnail_name={"profile-background.svg"}
-                    thumbnail_desc={"A view of the grid"}
-
-                    title={"Window Cleaning Planner"}
-
-                    writeup={"A native android application developed for a window cleaning business."}
-
-                    tags={["React Native", "Node.js", "MongoDb", "Express"]}
-                />
-
-                <Project
-
                     visible={check_active_filters("Front-end")}
 
-                    thumbnail_name={"window-thumb-alt.png"}
-                    thumbnail_desc={"A view of the grid"}
+                    thumbnail_name={"recall-thumb.png"}
+                    thumbnail_desc={"A screenshot of the landing page"}
 
-                    title={"Window Cleaning Planner"}
+                    title={"Landing page"}
 
-                    writeup={"A native android application developed for a window cleaning business."}
+                    writeup={"A landing page utilising colour psychology and a video background."}
 
-                    tags={["React Native", "Node.js", "MongoDb", "Express"]}
-                />
+                    tags={["React", "Redux", "CSS"]}
 
-
-                <Project
-
-                    visible={check_active_filters("Back-end")}
-
-                    thumbnail_name={"diary-laptop-grid.jpg"}
-                    thumbnail_desc={"A view of the grid"}
-
-                    title={"Window Cleaning Planner"}
-
-                    writeup={"A native android application developed for a window cleaning business."}
-
-                    tags={["React Native", "Node.js", "MongoDb", "Express"]}
                 />
 
                 <Project
@@ -167,6 +139,38 @@ const Projects = props => {
                     writeup={"A native android application developed for a window cleaning business."}
 
                     tags={["React Native", "Node.js", "MongoDb", "Express"]}
+                />
+
+
+                <Project
+
+                    visible={check_active_filters("Data structures and algorithms")}
+
+                    thumbnail_name={"Linkedlist.png"}
+                    thumbnail_desc={"A linked list"}
+
+                    title={"Linked List Data Structure"}
+
+                    writeup={"A complex linked list with various layers and algorithms, developed for a university project."}
+
+                    tags={["Java", "Algorithms", "BlueJ", "Linked List"]}
+
+                    noGallery
+                />
+
+
+                <Project
+
+                    visible={check_active_filters("Project Planning")}
+
+                    thumbnail_name={"proposal.jpg"}
+                    thumbnail_desc={"A man signing paper"}
+
+                    title={"Project Proposal"}
+
+                    writeup={"Includes requirements, objectives, risk analysis, legal issues and a Gantt chart."}
+
+                    tags={["Planning", "Gantt chart", "Report writing"]}
                 />
 
             </div>
