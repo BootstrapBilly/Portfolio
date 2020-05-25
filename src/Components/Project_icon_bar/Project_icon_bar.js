@@ -5,7 +5,7 @@ import React from "react"
 import classes from "./Project_icon_bar.module.css"
 
 import github from "../../Assets/Icons/github.svg"
-import gallery from "../../Assets/Icons/gallery.svg"
+import website from "../../Assets/Icons/website.svg"
 
 const Project_icon_bar = props => {
 
@@ -17,16 +17,16 @@ const Project_icon_bar = props => {
 
             <div className={classes.icon_container} style={{visibility:props.noGallery ? "hidden" : "visible"}}>
 
-                <img className={classes.icon} src={gallery} alt="A gallery icon"
+                <img className={classes.icon} src={website} alt="A gallery icon"
     />
-                <span className={classes.icon_text}>GALLERY</span>
+                <span className={classes.icon_text}>Website</span>
 
             </div>
 
             <div className={classes.icon_container}>
 
                 <img className={classes.icon} src={github} alt="A github icon" onClick={props.handleClickGithub} />
-                <span className={classes.icon_text}>GITHUB</span>
+                <span className={classes.icon_text}>Github</span>
 
             </div>
 

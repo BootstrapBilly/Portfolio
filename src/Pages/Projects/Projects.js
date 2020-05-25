@@ -103,7 +103,21 @@ const Projects = props => {
 
                     visible={check_active_filters("Full-stack")}
 
-                    thumbnail_name={"mobile.png"}
+                    thumbnail_name={"collection_tracker.jpg"}
+                    thumbnail_desc={"A screenshot of the collection tracker on various devices"}
+
+                    title={"Collection Tracker"}
+
+                    writeup={"A full stack web app which tracks my Guinness world record collection.."}
+
+                    tags={["React", "Node.js", "MongoDb", "Express", "HTML Canvas"]}
+                />
+
+                <Project
+
+                    visible={check_active_filters("Full-stack")}
+
+                    thumbnail_name={"mac.jpg"}
                     thumbnail_desc={"A view of the grid"}
 
                     title={"Window Cleaning Planner"}
@@ -117,21 +131,7 @@ const Projects = props => {
 
                     visible={check_active_filters("Full-stack")}
 
-                    thumbnail_name={"diary-screenshot.jpg"}
-                    thumbnail_desc={"A view of the grid"}
-
-                    title={"Window Cleaning Planner"}
-
-                    writeup={"A native android application developed for a window cleaning business."}
-
-                    tags={["React Native", "Node.js", "MongoDb", "Express"]}
-                />
-
-                <Project
-
-                    visible={check_active_filters("Full-stack")}
-
-                    thumbnail_name={"profile-background.svg"}
+                    thumbnail_name={"diary-laptop-grid.jpg"}
                     thumbnail_desc={"A view of the grid"}
 
                     title={"Window Cleaning Planner"}

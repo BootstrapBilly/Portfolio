@@ -245,8 +245,10 @@
     }
 
     .thumbnail{
-        animation: fadeIn 4s;
+        animation: explode 1s forwards;
         object-fit: fill;
+        animation-delay:0.2s ;
+        transform: scale(0);
     }
 
     .container:hover{
@@ -269,13 +271,13 @@
     }
 }
 
-@keyframes fadeIn {
+@keyframes explode {
     0% {
-      opacity: 0%;
+      transform: scale(0)
     }
        
     100% {
-    opacity: 100%;
+        transform: scale(1)
        
     }
   }
