@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="512px"
-   viewBox="-42 0 512 512"
-   width="512px"
+   height="45"
+   viewBox="-42 0 45 45"
+   width="45"
    class=""
    version="1.1"
    id="svg46"
@@ -23,6 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,19 +38,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="958"
-     inkscape:window-height="1008"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      id="namedview48"
      showgrid="false"
-     inkscape:zoom="0.4609375"
-     inkscape:cx="-449.08475"
-     inkscape:cy="256"
-     inkscape:window-x="-7"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:zoom="7.375"
+     inkscape:cx="7.8551613"
+     inkscape:cy="12.236525"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg46" />
   <g
-     id="g44">
+     id="g44"
+     transform="matrix(0.0861617,0,0,0.0861617,-37.673588,0.40864115)">
     <path
        d="M 152.99219,337.80078 66.738281,361.75781 C 31.773438,371.47266 7.574219,403.30859 7.574219,439.60156 v 64.82422 H 419.59766 v -64.82422 c 0,-36.29297 -24.19922,-68.1289 -59.16407,-77.84375 l -86.2539,-23.95703 z m 0,0"
        data-original="#DDF5FF"
