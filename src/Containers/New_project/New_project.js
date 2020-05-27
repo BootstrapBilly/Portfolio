@@ -11,6 +11,16 @@ const Project = props => {
     const [detail_open, set_detail_open] = useState(false)
     let timeout
 
+    const handle_click = () => {
+
+        set_detail_open(true)
+
+        setTimeout(()=> {
+
+            set_detail_open(false)
+        },10000)
+    }
+
     return (
 
         <div className={classes.container}
@@ -44,6 +54,8 @@ const Project = props => {
 
                             <span>{props.writeup}</span>
 
+                            <span className={classes.completion_date}>Completed : {props.completion_date}</span>
+
                         </div>
 
                         <div className={classes.tag_container}>
@@ -56,7 +68,7 @@ const Project = props => {
 
                     <div className={classes.icon_container}>
 
-                        <IconBar noGallery={props.noGallery}/>
+                        <IconBar noGallery={props.noGallery} on_web_click={()=> window.open(props.website)} on_github_click={()=> window.open(props.github)}/>
 
                     </div>
 
@@ -67,7 +79,7 @@ const Project = props => {
                 <img className={classes.thumbnail}
                     src={require(`../../Assets/Img/${props.thumbnail_name}`)}
                     alt={props.thumbnail_desc}
-                    onClick={() => !detail_open ? set_detail_open(true) : null}
+                    onClick={() => !detail_open ? handle_click() : null}
                 />
 
             }

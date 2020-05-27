@@ -14,8 +14,6 @@ import technologies from "../../Assets/Icons/technologies.svg"
 import technologies_selected from "../../Assets/Icons/technologies-selected.svg"
 import education from "../../Assets/Icons/education.svg"
 import education_selected from "../../Assets/Icons/education-selected.svg"
-import personal from "../../Assets/Icons/personal.svg"
-import personal_selected from "../../Assets/Icons/personal-selected.svg"
 
 const Nav = props => {
 
@@ -27,11 +25,11 @@ const Nav = props => {
             <nav className={classes.nav} onMouseLeave={()=> set_active_icon(props.path)}>
 
                 <Navlink
-                    to="/"
+                    to="/projects"
                     test-handle="projects-link"
                     text="PROJECTS"
-                    img={active_icon === "/" ? projects_selected : projects}
-                    handleClick={() => set_active_icon("/")}
+                    img={active_icon === "/projects" ? projects_selected : projects}
+                    handleClick={() => set_active_icon("/projects")}
           
                 />
 
@@ -51,15 +49,6 @@ const Nav = props => {
                     img={active_icon === "/education" ? education_selected : education}
                     handleClick={() => set_active_icon("/education")}
          
-                />
-
-                <Navlink
-                    to="/about-me"
-                    test-handle="personal-link"
-                    text="ABOUT ME"
-                    img={active_icon === "/about-me" ? personal_selected : personal}
-                    handleClick={() => set_active_icon("/about-me")}
-               
                 />
 
             </nav>

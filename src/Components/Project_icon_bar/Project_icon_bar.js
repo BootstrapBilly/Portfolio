@@ -13,9 +13,9 @@ const Project_icon_bar = props => {
 
     return (
 
-        <div className={classes.footer_container}>
+        <div className={classes.container}>
 
-            <div className={classes.icon_container} style={{visibility:props.noGallery ? "hidden" : "visible"}}>
+            <div className={classes.icon_container} style={{visibility:props.noGallery ? "hidden" : "visible"}} onClick={props.on_web_click}>
 
                 <img className={classes.icon} src={website} alt="A gallery icon"
     />
@@ -25,7 +25,7 @@ const Project_icon_bar = props => {
 
             <div className={classes.icon_container}>
 
-                <img className={classes.icon} src={github} alt="A github icon" onClick={props.handleClickGithub} />
+                <img className={classes.icon} src={github} alt="A github icon"  onClick={props.on_github_click} />
                 <span className={classes.icon_text}>Github</span>
 
             </div>

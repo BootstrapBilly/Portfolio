@@ -60,6 +60,26 @@ const Projects = props => {
 
                     visible={check_active_filters("Full-stack")}
 
+                    thumbnail_name={"collection_tracker.jpg"}
+                    thumbnail_desc={"A screenshot of the collection tracker on various devices"}
+
+                    title={"Collection Tracker"}
+
+                    writeup={"A full stack web app which tracks my Guinness world record collection."}
+
+                    completion_date={"May 2020"}
+
+                    website={"https://collectiontracker-57b9e.web.app/"}
+
+                    github={"https://github.com/BootstrapBilly/Collection_tracker_2020"}
+
+                    tags={["React", "Node.js", "MongoDb", "Responsive Design",]}
+                />
+
+                <Project
+
+                    visible={check_active_filters("Full-stack")}
+
                     thumbnail_name={"diary-thumb-min.png"}
                     thumbnail_desc={"A view of the grid on desktop"}
 
@@ -67,7 +87,14 @@ const Projects = props => {
 
                     writeup={"A full stack web application, featuring a custom grid data structure."}
 
-                    tags={["React", "Node.js", "MongoDb", "Express"]}
+                    completion_date={"March 2020"}
+
+                    website={"https://to1-13f69.firebaseapp.com/"}
+
+                    github={"https://github.com/BootstrapBilly/1to1"}
+
+                    tags={["React", "Node.js", "MongoDb", "Responsive Design"]}
+
                 />
 
                 <Project
@@ -80,6 +107,12 @@ const Projects = props => {
                     title={"Window Cleaning Planner"}
 
                     writeup={"A native android application developed for a window cleaning business."}
+
+                    completion_date={"December 2019"}
+
+                    website={"https://play.google.com/store/apps/details?id=com.billyjames.easywindows&gl=GB"}
+
+                    github={"https://github.com/BootstrapBilly/14188056-Assignment2-6WCM0034-Window-Cleaning-App"}
 
                     tags={["React Native", "Node.js", "MongoDb", "Express"]}
                 />
@@ -97,20 +130,6 @@ const Projects = props => {
 
                     tags={["React", "Redux", "CSS"]}
 
-                />
-
-                <Project
-
-                    visible={check_active_filters("Full-stack")}
-
-                    thumbnail_name={"collection_tracker.jpg"}
-                    thumbnail_desc={"A screenshot of the collection tracker on various devices"}
-
-                    title={"Collection Tracker"}
-
-                    writeup={"A full stack web app which tracks my Guinness world record collection.."}
-
-                    tags={["React", "Node.js", "MongoDb", "Express", "HTML Canvas"]}
                 />
 
                 <Project

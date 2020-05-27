@@ -23,6 +23,7 @@
     max-lines: 1;
 }
 
+
 .skill_card_container {
     display: flex;
     flex-wrap: wrap;
@@ -105,8 +106,8 @@
         margin-bottom: 0;
     }
     .header:hover {
-        color: black;
-        border-color: black;
+        border-color:#A81B86 ;
+        color: #A81B86;
         cursor: pointer;
     }
 }

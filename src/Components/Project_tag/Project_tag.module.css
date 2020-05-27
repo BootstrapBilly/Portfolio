@@ -1,9 +1,10 @@
 .text{
-    border: 2px solid black;
+    border: 2px solid #555355;
+    color:#555355;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4vh;
+    height: 20px;
     padding: 0px 4px;
     margin-left: 3%;
     font-size: 0.9rem;
