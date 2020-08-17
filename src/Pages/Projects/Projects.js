@@ -96,26 +96,6 @@ const Projects = props => {
                     tags={["React", "Redux", "Mobile", "UX Design", "Prototyping"]}
                 />
 
-                <Project
-
-                    visible={check_active_filters("Front-end")}
-
-                    thumbnail_name={"uxdpersonas.jpg"}
-                    thumbnail_desc={"A screenshot of the landing page"}
-
-                    title={"User personas"}
-
-                    website={"https://uxd-personas.web.app/"}
-
-                    github={"https://github.com/BootstrapBilly/UX-Personas"}
-
-                    writeup={"Personas developed as part of my user experience design module"}
-
-                    tags={["React", "Redux", "CSS", "UX design"]}
-
-                    completion_date={"June 2020"}
-
-                />
 
                 <Project
 
@@ -135,6 +115,27 @@ const Projects = props => {
                     github={"https://github.com/BootstrapBilly/Collection_tracker_2020"}
 
                     tags={["React", "Node.js", "MongoDb", "Responsive Design",]}
+                />
+
+                <Project
+
+                    visible={check_active_filters("Front-end")}
+
+                    thumbnail_name={"uxdpersonas.jpg"}
+                    thumbnail_desc={"A screenshot of the landing page"}
+
+                    title={"User personas"}
+
+                    website={"https://uxd-personas.web.app/"}
+
+                    github={"https://github.com/BootstrapBilly/UX-Personas"}
+
+                    writeup={"Personas developed as part of my user experience design module"}
+
+                    tags={["React", "Redux", "CSS", "UX design"]}
+
+                    completion_date={"June 2020"}
+
                 />
 
                 <Project
@@ -176,7 +177,7 @@ const Projects = props => {
                     github={"https://github.com/BootstrapBilly/14188056-Assignment2-6WCM0034-Window-Cleaning-App"}
 
                     tags={["React Native", "Node.js", "MongoDb", "Express"]}
-                    
+
                     noGallery
                 />
 
