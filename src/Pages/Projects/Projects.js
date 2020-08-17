@@ -60,6 +60,67 @@ const Projects = props => {
 
                     visible={check_active_filters("Full-stack")}
 
+                    thumbnail_name={"recall.jpg"}
+                    thumbnail_desc={"A view of the grid"}
+
+                    title={"Recall"}
+
+                    writeup={"A code snippet manager, where snippets can be combined into collections, and shared with friends."}
+
+                    completion_date={"August 2020"}
+
+                    website={"https://get-recall.web.app/"}
+
+                    github={"https://github.com/BootstrapBilly/Recall"}
+
+                    tags={["React", "Redux", "Node.js", "MongoDb", "Express"]}
+                />
+
+                <Project
+
+                    visible={check_active_filters("Front-end")}
+
+                    thumbnail_name={"foodforthought.jpg"}
+                    thumbnail_desc={"A view of the grid"}
+
+                    title={"Food for thought"}
+
+                    writeup={"A Hifi prototype mobile healthy eating app, built for my UX design module."}
+
+                    completion_date={"August 2020"}
+
+                    website={"https://food-for-thoughtt.web.app/"}
+
+                    github={" https://github.com/BootstrapBilly/Food-for-thought"}
+
+                    tags={["React", "Redux", "Mobile", "UX Design", "Prototyping"]}
+                />
+
+                <Project
+
+                    visible={check_active_filters("Front-end")}
+
+                    thumbnail_name={"uxdpersonas.jpg"}
+                    thumbnail_desc={"A screenshot of the landing page"}
+
+                    title={"User personas"}
+
+                    website={"https://uxd-personas.web.app/"}
+
+                    github={"https://github.com/BootstrapBilly/UX-Personas"}
+
+                    writeup={"Personas developed as part of my user experience design module"}
+
+                    tags={["React", "Redux", "CSS", "UX design"]}
+
+                    completion_date={"June 2020"}
+
+                />
+
+                <Project
+
+                    visible={check_active_filters("Full-stack")}
+
                     thumbnail_name={"collection_tracker.jpg"}
                     thumbnail_desc={"A screenshot of the collection tracker on various devices"}
 
@@ -80,7 +141,7 @@ const Projects = props => {
 
                     visible={check_active_filters("Full-stack")}
 
-                    thumbnail_name={"diary-thumb-min.png"}
+                    thumbnail_name={"diary-thumb-min.jpg"}
                     thumbnail_desc={"A view of the grid on desktop"}
 
                     title={"Appointment Manager"}
@@ -101,7 +162,7 @@ const Projects = props => {
 
                     visible={check_active_filters("Full-stack")}
 
-                    thumbnail_name={"window-thumb-alt.png"}
+                    thumbnail_name={"window-thumb.jpg"}
                     thumbnail_desc={"A view of the grid"}
 
                     title={"Window Cleaning Planner"}
@@ -115,49 +176,8 @@ const Projects = props => {
                     github={"https://github.com/BootstrapBilly/14188056-Assignment2-6WCM0034-Window-Cleaning-App"}
 
                     tags={["React Native", "Node.js", "MongoDb", "Express"]}
-                />
-
-                <Project
-
-                    visible={check_active_filters("Front-end")}
-
-                    thumbnail_name={"recall-thumb.png"}
-                    thumbnail_desc={"A screenshot of the landing page"}
-
-                    title={"Landing page"}
-
-                    writeup={"A landing page utilising colour psychology and a video background."}
-
-                    tags={["React", "Redux", "CSS"]}
-
-                />
-
-                <Project
-
-                    visible={check_active_filters("Full-stack")}
-
-                    thumbnail_name={"mac.jpg"}
-                    thumbnail_desc={"A view of the grid"}
-
-                    title={"Window Cleaning Planner"}
-
-                    writeup={"A native android application developed for a window cleaning business."}
-
-                    tags={["React Native", "Node.js", "MongoDb", "Express"]}
-                />
-
-                <Project
-
-                    visible={check_active_filters("Full-stack")}
-
-                    thumbnail_name={"diary-laptop-grid.jpg"}
-                    thumbnail_desc={"A view of the grid"}
-
-                    title={"Window Cleaning Planner"}
-
-                    writeup={"A native android application developed for a window cleaning business."}
-
-                    tags={["React Native", "Node.js", "MongoDb", "Express"]}
+                    
+                    noGallery
                 />
 
 
@@ -170,7 +190,11 @@ const Projects = props => {
 
                     title={"Linked List Data Structure"}
 
-                    writeup={"A complex linked list with various layers and algorithms, developed for a university project."}
+                    writeup={"A complex linked list with various layers and algorithms, developed for data structures and algorithms module."}
+
+                    completion_date={"December 2018"}
+
+                    github={"https://github.com/BootstrapBilly/Linked_list"}
 
                     tags={["Java", "Algorithms", "BlueJ", "Linked List"]}
 
@@ -190,6 +214,12 @@ const Projects = props => {
                     writeup={"Includes requirements, objectives, risk analysis, legal issues and a Gantt chart."}
 
                     tags={["Planning", "Gantt chart", "Report writing"]}
+
+                    completion_date={"March 2020"}
+
+                    noGallery
+
+                    download={"proposal"}
                 />
 
             </div>

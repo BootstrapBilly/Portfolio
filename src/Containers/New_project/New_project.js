@@ -68,7 +68,7 @@ const Project = props => {
 
                     <div className={classes.icon_container}>
 
-                        <IconBar noGallery={props.noGallery} on_web_click={()=> window.open(props.website)} on_github_click={()=> window.open(props.github)}/>
+                        <IconBar noGallery={props.noGallery} download={props.download} on_web_click={()=> window.open(props.website)} on_github_click={()=> window.open(props.github)} on_word_click={()=> alert("a")}/>
 
                     </div>
 
