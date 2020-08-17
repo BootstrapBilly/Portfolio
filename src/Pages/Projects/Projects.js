@@ -138,7 +138,7 @@ const Projects = props => {
 
                 />
 
-                <Project
+                {/* <Project
 
                     visible={check_active_filters("Full-stack")}
 
@@ -157,7 +157,7 @@ const Projects = props => {
 
                     tags={["React", "Node.js", "MongoDb", "Responsive Design"]}
 
-                />
+                /> */}
 
                 <Project
 
