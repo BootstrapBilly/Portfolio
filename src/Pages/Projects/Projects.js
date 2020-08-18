@@ -54,6 +54,10 @@ const Projects = props => {
 
                 </div>
 
+
+                <span className={classes.hover_prompt}>Hover over a project for more information</span>
+
+
                 <Nav path={props.location.pathname} />
 
                 <Project

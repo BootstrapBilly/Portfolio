@@ -34,6 +34,11 @@
 
 }
 
+.hover_prompt{
+    width: 100%;
+    display: none;
+}
+
 /* landscape phone*/
 @media (orientation: landscape) {
 
@@ -170,6 +175,11 @@
         border-color: black;
         color: black;  
 
+}
+
+.hover_prompt{
+display: block;
+width: 100%;
 }
 
 
