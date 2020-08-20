@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.project_name{
+    font-size: 20px;
+}
+
+.project_description{
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.date_container{
+    width:230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:grey;
+    font-size: 15px;
+}
+
+.blog_photo{
+    position: relative;
+    top: -50px;
+}
+
+@media (min-width: 500px){
+
+    .blog_photo{
+        top: -30px;
+    }
+}
+
+@media (min-width: 900px){
+
+    .blog_photo{
+        top: -20px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .blog_photo{
+        top: -10px;
+    }
+}
