@@ -20,29 +20,3 @@
     color:grey;
     font-size: 15px;
 }
-
-.blog_photo{
-    position: relative;
-    top: -50px;
-}
-
-@media (min-width: 500px){
-
-    .blog_photo{
-        top: -30px;
-    }
-}
-
-@media (min-width: 900px){
-
-    .blog_photo{
-        top: -20px;
-    }
-}
-
-@media (min-width: 1200px){
-
-    .blog_photo{
-        top: -10px;
-    }
-}

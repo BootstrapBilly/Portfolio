@@ -1,9 +1,11 @@
 .container{
-    height: 300px;
     width: 100%;
     position: relative;
-    top: -100px;
     font-size: 18px;
+    background-color: whitesmoke;
+    width: 100%;
+    padding:20px 40px;
+    left: -40px;
 }
 
 .text{
@@ -15,26 +17,26 @@
 }
 
 .second_para{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 @media (min-width: 500px){
 
     .container{
-        top: -50px;
+       margin-top: 0px;
     }
 }
 
 @media (min-width: 900px){
 
     .container{
-        top: 10px;
+      margin-top: 20px;
     }
 }
 
-@media (min-width: 900px){
+@media (min-width: 1200px){
 
     .container{
-        top: 25px;
+        margin-top: 25px;
     }
 }
