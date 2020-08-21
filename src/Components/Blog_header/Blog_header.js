@@ -26,7 +26,7 @@ export const Blog_header = props => {
 
             </div>
 
-            <img src={BlogPhoto} alt="Photo of someone blogging" className={classes.blog_photo} />
+            <img src={BlogPhoto} alt="Someone giving a gift to someone in need" className={classes.blog_photo} />
 
         </div>
 
